@@ -53,6 +53,7 @@ section[class*="light"] {
 /*Main banner*/
 /*left part*/
 .banner-dark {
+    position: relative;
     background-image: url(../imagine/mainbanner.jpg);
     background-size: cover;
     /*background-color: rgba(3, 3, 3, 0,5);*/
@@ -144,10 +145,8 @@ a[class*="button-small"] {
 
 .banner__form__item {
     display: block;
-    height: 8.44%;
     width: 78,72%;
-    /*margin-top: 8%;*/
-    margin-bottom: 1%;
+    margin-bottom: 5%;
 }
 
 .banner__form__name {
@@ -178,6 +177,8 @@ a[class*="button-small"] {
     font-weight: 600;
     background-color: #ec7979;
     border: none;
+    position: absolute;
+    bottom: 0;
 }
 
 /*media*/
@@ -187,8 +188,8 @@ a[class*="button-small"] {
 }
 
 .media__box1 {
-    width: 470px;
-    margin-left: 170px;
+    width: 31,13%;
+    margin-left: 11.26%;
     float: left;
 }
 
