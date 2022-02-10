@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.box{
+background-color: blue;
+width: 1000px;
+margin: 100px auto;
+}
+
+.box_list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box_list_item {
+    border: solid 2px aliceblue;
+    margin: 10px 0px;
+    width: 100px;
+    text-align: center;
+}
