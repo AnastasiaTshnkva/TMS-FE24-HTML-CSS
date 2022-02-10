@@ -1,10 +1,369 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.conteiner {
-    width: 1170px;
+body {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    border-color: white;
+}
+
+.container {
     margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1200px;
+    padding: 0px 15px;
 }
 
+/*titles*/
+h1,
+title1 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+h2,
+title2 {
+    font-size: 36px;
+}
+
+h3,
+title3 {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h4,
+title4 {
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h5,
+title5 {
+    font-family: Raleway;
+}
+
+h6,
+title6 {
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/*bittons*/
+.button {
+    font-family: Open Sans;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 20px 0px;
+    min-width: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: solid;
+}
+
+.small-button {
+    width: 270px;
+}
+
+.big-button {
+    width: 370px;
+}
+
+.color-button {
+    border: none;
+    background-color: #EC7979;
+}
+
+.clear-button {
+    border-color: white;
+    border-width: 2px;
+}
+
+.clear-button:hover {
+    border-color: #EC7979;
+    color: #EC7979;
+}
+
+.clear-button:active {
+    background-color: #AB4949;
+    color: white;
+}
+
+/*lines*/
+.line {
+    width: 170px;
+    height: 1px;
+    border: none;
+}
+
+.light-line {
+    background-color: white;
+}
+
+.color-line {
+    background-color: #EC7979;
+}
+
+
+/*MENU*/
+.menu {
+    background-color: rgba(0, 0, 0);
+}
+
+.menu_logo {
+    padding: 0px 22px;
+    width: 183px;
+}
+
+.menu_list {
+    list-style: none;
+    display: inline;
+}
+
+.menu_list_item {
+    display: inline-block;
+    float: right;
+    text-align: center;
+}
+
+.menu_list_item:hover {
+    background-color: #EC7979;
+}
+
+.menu_list_item:active {
+    background-color:#AB4949;
+}
+
+.menu_list_link {
+    display: block;
+    text-decoration: none;
+    padding: 30px 0px;
+    width: 114px;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size:  14px;
+    color: white;
+    min-height:14 px;
+}
+
+
+/*MAIN BANNER*/
+.dark {
+    color: white;
+    background-color: black;
+}
+
+.main-banner {
+    background-image: url(../imagine/mainbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*position: absolute;*/
+}
+
+/*left part*/
+.banner_box1 {
+    padding: 208px 0 183px;
+    max-width: 670px;
+    max-height: fit-content;
+}
+
+.banner_logo {
+    width: 270px;
+    margin-bottom: 73px;
+}
+
+.banner_logo:last-child {
+    margin-bottom: 0;
+}
+
+.banner-title {
+    margin-bottom: 55px;
+}
+
+.banner-title:last-child {
+    margin-bottom: 0px;
+}
+
+.banner_line {
+    margin-bottom: 42px;
+    /*добавить выравнивание по левому краю*/
+}
+
+.banner_line:last-child {
+    margin-bottom: 0px;
+}
+
+.banner_text {
+    max-width: 270px;
+    margin-bottom: 42px;
+}
+
+.banner_text:last-child {
+    margin-bottom: 0px;
+}
+
+/*right part*/
+.banner_box2 {
+    margin: 208px 0px 293px;
+    width: 470px;
+    background-color: #FFFFFF;
+    min-height: 450px;
+    border-radius: 10px;
+}
+
+/*поправить расположение*/
+.banner_box2_header {
+    display: block;
+    color: #333333;
+    font-family: Open Sans;
+    font-weight:  700;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 30px;
+}
+
+.free {
+    color: #EC7979;
+}
+
+.banner_form {
+    display: block;
+    height: 390px;
+    background-color: #FFFFFF;
+    width: 470px;
+}
+
+.banner_form_item {
+    min-height: 50px;
+    padding: 0px 50px;
+    margin-bottom: 33px;
+}
+
+.banner_form_item:last-child {
+    margin-bottom: 75px;
+}
+
+.banner_form_name {
+    min-height: 19px;
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #BDBDBD;
+    width: 370px;
+    display: block;
+}
+
+.banner_form_input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #BDBDBD 1px;
+    width: 370px;
+}
+
+/*корявая кнопка*/
+.form_button {
+    width: 470px;
+    min-height: 15px;
+    background-color: #EC7979;
+    border-radius: 0px 0px 10px 10px;
+    font-family: Open Sans;
+    font-size: 15px;
+    padding: 22px auto;
+}
+
+/*MEDIA*/
+.media {
+    background-color: #F8EFEF;
+    min-height: 140px;
+}
+/*отступ с белым фоном???*/
+.media_box1 {
+    max-width: 470px;
+    float: left;
+}
+
+.media_header {
+    display: block;
+    font-family: Open Sans;
+    font-weight: 700;
+    font-size: 24px;
+    /*padding: 18px auto; -- почему не работает???*/
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.media_header:last-child {
+    margin:auto;
+}
+
+.media_text {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.media_text:last-child {
+    margin:auto;
+}
+
+.media_list {
+    list-style: none;
+    min-height: 70px;
+}
+
+.media_list_item {
+    display: inline-block;
+    margin: 35px 20px;
+}
+
+/*TABS*/
+.tabs {
+    margin: 100px auto;
+}
+
+.tabs_list {
+    list-style: none;
+}
+
+.tabs_list_item {
+    display: inline-block;
+    list-style: none;
+    width: 194px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: Open Sans;
+    font-size: 14px;
+}
+
+.tabs_box {
+    width: 570px;
+    margin-left: 100px;
+    float: left;
+}
+
+.tabs_box_header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 27px;
+}
+
+/*как правильно расположить строки? span?*/
+.tabs_box_text1 {
+    margin-bottom: 20px;
+}
+
+.tabs_box_text1:last-child {
+    margin-bottom: 0px;
+}
