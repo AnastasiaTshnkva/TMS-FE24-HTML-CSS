@@ -19,37 +19,43 @@ body {
 
 /*titles*/
 h1,
-title1 {
+.title1 {
+    font-family: Raleway;
     font-weight: 500;
     font-size: 48px;
 }
 
 h2,
-title2 {
+.title2 {
+    font-family: Raleway;
     font-size: 36px;
+    font-weight: 400;
+}
 }
 
 h3,
-title3 {
+.title3 {
     font-family: Open Sans;
     font-size: 30px;
     font-weight: 700;
 }
 
 h4,
-title4 {
+.title4 {
     font-family: Open Sans;
     font-size: 24px;
     font-weight: 700;
 }
 
 h5,
-title5 {
+.title5 {
     font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 h6,
-title6 {
+.title6 {
     font-family: Open Sans;
     font-size: 13px;
     font-weight: 700;
@@ -82,6 +88,15 @@ title6 {
     background-color: #EC7979;
 }
 
+.color-button:hover {
+    background-color: #AB4949;
+}
+
+.color-button:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
+}
+
 .clear-button {
     border-color: white;
     border-width: 2px;
@@ -102,6 +117,7 @@ title6 {
     width: 170px;
     height: 1px;
     border: none;
+    margin: 0px auto;
 }
 
 .light-line {
@@ -112,26 +128,48 @@ title6 {
     background-color: #EC7979;
 }
 
+/*Headers*/
+.block_header {
+    display: block;
+    padding-top: 107px;
+    padding-bottom: 57px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block_text {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
 
 /*MENU*/
 .menu {
     background-color: rgba(0, 0, 0);
 }
 
+.menu_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu_logo {
-    padding: 0px 22px;
+    padding: auto 0px;
     width: 183px;
 }
 
 .menu_list {
     list-style: none;
-    display: inline;
+    display: flex;
+    width: 570px;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .menu_list_item {
-    display: inline-block;
-    float: right;
     text-align: center;
+    align-self: center;
+    padding: 30px;
 }
 
 .menu_list_item:hover {
@@ -145,13 +183,11 @@ title6 {
 .menu_list_link {
     display: block;
     text-decoration: none;
-    padding: 30px 0px;
-    width: 114px;
+    padding: auto 0px;
     font-family: Open Sans;
     font-weight: 600;
     font-size:  14px;
     color: white;
-    min-height:14 px;
 }
 
 
@@ -165,10 +201,14 @@ title6 {
     background-image: url(../imagine/mainbanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /*position: absolute;*/
+    /*добавить фон сверху*/
 }
 
 /*left part*/
+.banner_box {
+    display: flex;
+}
+
 .banner_box1 {
     padding: 208px 0 183px;
     max-width: 670px;
@@ -194,7 +234,7 @@ title6 {
 
 .banner_line {
     margin-bottom: 42px;
-    /*добавить выравнивание по левому краю*/
+    margin-left: 0px;
 }
 
 .banner_line:last-child {
@@ -219,7 +259,6 @@ title6 {
     border-radius: 10px;
 }
 
-/*поправить расположение*/
 .banner_box2_header {
     display: block;
     color: #333333;
@@ -227,9 +266,8 @@ title6 {
     font-weight:  700;
     font-size: 24px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 30px;
+    margin: 57px auto;
+    min-height: 24px;
 }
 
 .free {
@@ -238,19 +276,17 @@ title6 {
 
 .banner_form {
     display: block;
-    height: 390px;
-    background-color: #FFFFFF;
     width: 470px;
 }
 
 .banner_form_item {
-    min-height: 50px;
+    /*min-height: 50px;*/
     padding: 0px 50px;
     margin-bottom: 33px;
 }
 
-.banner_form_item:last-child {
-    margin-bottom: 75px;
+.banner_form_item:first-child {
+    margin-top: 45px;
 }
 
 .banner_form_name {
@@ -270,15 +306,26 @@ title6 {
     width: 370px;
 }
 
-/*корявая кнопка*/
 .form_button {
-    width: 470px;
+    width: 100%;
     min-height: 15px;
     background-color: #EC7979;
     border-radius: 0px 0px 10px 10px;
     font-family: Open Sans;
     font-size: 15px;
     padding: 22px auto;
+    margin-top: 45px;
+    border: none;
+    margin-bottom: 0px;
+}
+
+.form_button:hover {
+    background-color: #AB4949;
+}
+
+.form_button:active {
+    background-color: #EC7979;
+    box-shadow: inset 0px 0px 10px #AB4949;
 }
 
 /*MEDIA*/
@@ -286,10 +333,15 @@ title6 {
     background-color: #F8EFEF;
     min-height: 140px;
 }
-/*отступ с белым фоном???*/
+
+.media_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
 .media_box1 {
-    max-width: 470px;
-    float: left;
+    width: 470px;
 }
 
 .media_header {
@@ -297,7 +349,7 @@ title6 {
     font-family: Open Sans;
     font-weight: 700;
     font-size: 24px;
-    /*padding: 18px auto; -- почему не работает???*/
+    /*padding: 18px auto; -- почему не работает?*/
     padding-top: 18px;
     padding-bottom: 18px;
     margin-bottom: 18px;
@@ -318,12 +370,13 @@ title6 {
 }
 
 .media_list {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
-    min-height: 70px;
+    width: 680px;
 }
 
 .media_list_item {
-    display: inline-block;
     margin: 35px 20px;
 }
 
@@ -334,10 +387,12 @@ title6 {
 
 .tabs_list {
     list-style: none;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .tabs_list_item {
-    display: inline-block;
+    text-transform: uppercase;
     list-style: none;
     width: 194px;
     text-align: center;
@@ -345,12 +400,31 @@ title6 {
     padding-bottom: 12px;
     font-family: Open Sans;
     font-size: 14px;
+    border-bottom: #BDBDBD solid 1px;
+    cursor: pointer;
 }
 
-.tabs_box {
+.tabs_list_item:active,
+.tabs_list_item:hover {
+    border: #BDBDBD solid 1px;
+    border-bottom: none;
+}
+
+.tabs_main-box {
+    display: flex;
+}
+
+.tab2 {
+    display: none;
+}
+
+.tab3 {
+    display: none;
+}
+
+.tabs_text-box {
     width: 570px;
     margin-left: 100px;
-    float: left;
 }
 
 .tabs_box_header {
@@ -360,10 +434,286 @@ title6 {
 }
 
 /*как правильно расположить строки? span?*/
-.tabs_box_text1 {
+.tabs_box_text {
     margin-bottom: 20px;
 }
 
-.tabs_box_text1:last-child {
+.tabs_box_text:last-child {
     margin-bottom: 0px;
+}
+
+
+/*ABOUT*/
+.about_text {
+    margin-bottom: 110px;
+}
+
+.about_list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_list_item {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_list_icon {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 39px;
+}
+
+.about_list_icon:last-child {
+    margin-bottom: 58px;
+}
+
+.about_list_title {
+    display: block;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    width: 370px;
+    margin: 0px 5px 8px;
+    text-align: center;
+}
+
+.about_list_title:last-child {
+    margin-bottom: 58px;
+}
+
+.about_list_text {
+    display: block;
+    width: 370px;
+    text-align: center;
+    margin: 0px 5px 58px;
+}
+
+/*PRICE*/
+.price {
+    background-color: #F5F5F5;
+}
+
+.price_text {
+    margin-bottom: 59px;
+}
+
+.prise_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.price_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    margin: 0px 15px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.price_card2 {
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.price_card_name {
+    display: block;
+    background-color: #333333;
+    padding: 18px;
+    width: 370px;
+    text-align: center;
+    border: solid #F5F5F5 2px;
+}
+
+.price_card_cost {
+    display: block;
+    background-color: #333333;
+    padding: 32px;
+    width: 370px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    border: solid #F5F5F5 2px;
+}
+
+.price_card_description {
+    display: block;
+    color: rgba(255, 255, 255, 0,5);
+    background-color: #333333;
+    padding: 15px;
+    width: 370px;
+    text-align: center;
+    border: solid #F5F5F5 2px;
+}
+
+.price_card_list_item {
+    display: block;
+    color: #86878B;
+    background-color: #FFFFFF;
+    padding: 15px;
+    width: 370px;
+    text-align: center;
+    border: solid #F5F5F5 2px;
+}
+
+/*REVIEWS*/
+.reviews_text {
+    margin-bottom: 83px;
+}
+
+.reviews_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.reviews_list_item {
+    width: 370px;
+    margin: 0px 15px;
+}
+
+.reviews_quote {
+    background-color: #E2E2E2;
+    color: #86878B;
+    text-align: center;
+    padding-top: 37px;
+    padding-bottom: 37px;
+    width: 370px;
+    border-radius: 10px;
+}
+
+.reviews_quote:last-child {
+    margin-bottom: 46px;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 30px solid #E2E2E2;
+    margin-left: 10%;
+    margin-bottom: 46px;
+}
+
+.reviewes_manager {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+}
+
+.reviews_manager_description {
+    width: 240px;
+    margin-left: 30px;
+}
+
+.reviews_img {
+    flex-shrink: 0;
+    width: 90px;
+}
+
+.reviews_manager_name {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.reviews_manager_name:last-child {
+    margin-bottom: 0px;
+}
+
+/*STYLISH*/
+.stylish {
+    background-image: url(../imagine/stylishbg.jpg);
+}
+
+.stylish_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.stylish_text {
+    margin-bottom: 73px;
+}
+
+/*CONTACT FORM*/
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.contact_text {
+    margin-bottom: 89px;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact_form_part {
+    width: 575px;
+    margin: 0px 2px;
+}
+
+.contact_form_item {
+    min-height: 50px;
+    margin-bottom: 50px;
+}
+
+.contact_form_name {
+    display: block;
+    font-family: Open Sans; 
+    font-size: 14px;
+    color: #BDBDBD;
+    width: 570px;
+}
+
+.contact_form_input {
+    width: 570px;
+    border: none;
+    border-bottom: solid 1px #BDBDBD;
+}
+
+.contact_form_message {
+    width: 570px;
+}
+
+.contact_form_message_input {
+    width: 570px;
+    height: 222px;
+    border: none;
+    border-bottom: solid 1px #BDBDBD;
+}
+
+/*FOOTER*/
+.footer {
+    background-color: #000000;
+    padding-top: 39px;
+    padding-bottom: 27px;
+}
+
+.footer_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_list {
+    display: flex;
+    list-style: none;
+    width: 570px;
+    justify-content: space-between;
 }
