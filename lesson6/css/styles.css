@@ -1,0 +1,43 @@
+.box1 {
+    height: 300px;
+    background-color: green;
+    position: relative;
+    margin: 100px;
+}
+
+[class*="box_item"] {
+    height: 100px;
+    width: 100px;
+}
+
+.box_item_1 {
+    position: absolute;
+    top: 50px;
+    margin-left: -50%;
+    right: 50%;
+    background-color: rgb(240, 144, 26);
+}
+
+.box_item_2 {
+    position: absolute;
+    left: 50px;
+    margin-top: -50%;
+    top: 50%;
+    background-color: rgb(139, 197, 32);
+}
+
+.box_item_3 {
+    position: absolute;
+    bottom: 50px;
+    margin-left: -50%;
+    right: 50%;
+    background-color: rgb(16, 188, 231);
+}
+
+.box_item_4 {
+    position: absolute;
+    right: 50px;
+    margin-left: -50%;
+    right: 50%;
+    background-color: rgb(228, 72, 158);
+}
