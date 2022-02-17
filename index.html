@@ -3,42 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>AXIT</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    </head>
 
 <body>
-    <header class="menu">
-        <nav class="container menu_nav">
-            <a href="" ><img class="menu_logo" src="./imagine/AXITlogo.svg" alt="logo"></a>
-            <ul class="menu_list">
-                <li class="menu_list_item">
-                    <a class="menu_list_link" href="#tabs">Features</a>
-                </li>
-                <li class="menu_list_item">
-                    <a class="menu_list_link" href="#about">About</a>
-                </li>
-                <li class="menu_list_item">
-                    <a class="menu_list_link" href="#price">Pricing</a>
-                </li>
-                <li class="menu_list_item">
-                    <a class="menu_list_link" href="#reviews">Reviews</a>
-                </li>
-                <li class="menu_list_item">
-                    <a class="menu_list_link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#tabs">Features</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#price">Pricing</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
         <!--Main banner-->
         <section class="main-banner dark">
+
             <div class="container banner_box">
                 <div class="banner_box1"> 
-                    <img class="banner_logo" src="./imagine/AXITlogo.svg" alt="logo">
+                    <img class="banner_logo" src="./image/AXITlogo.svg" alt="logo">
                     <h1 class="banner-title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                     <hr class="line light-line banner_line">
                     <p class="banner_text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -75,25 +80,25 @@
                 </div>
                 <ul class="media_list">
                     <li class="media_list_item">
-                        <img src="./imagine/fasebook.svg" alt="facebook">
+                        <img src="./image/fasebook.svg" alt="facebook">
                     </li>
                     <li class="media_list_item">
-                        <img src="./imagine/twitter.svg" alt="twitter">
+                        <img src="./image/twitter.svg" alt="twitter">
                     </li>
                     <li class="media_list_item">
-                        <img src="./imagine/linkedin.svg" alt="linkedin">
+                        <img src="./image/linkedin.svg" alt="linkedin">
                     </li>
                     <li class="media_list_item">
-                        <img src="./imagine/pinterest.svg" alt="pinterest">
+                        <img src="./image/pinterest.svg" alt="pinterest">
                     </li>
                     <li class="media_list_item">
-                        <img src="./imagine/instagram.svg" alt="instagram">
+                        <img src="./image/instagram.svg" alt="instagram">
                     </li>
                     <li class="media_list_item">
-                    <img src="./imagine/github.svg" alt="github">
+                    <img src="./image/github.svg" alt="github">
                     </li>
                     <li class="media_list_item">
-                        <img src="./imagine/rss.svg" alt="rss">
+                        <img src="./image/rss.svg" alt="rss">
                     </li>
                 </ul>
             </div>
@@ -118,7 +123,7 @@
                         <p class="tabs_box_text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                         <a class="small-button color-button button" href="" download>Download</a>
                     </div>
-                    <img class="tabs_img" src="./imagine/Rectangle 111111.png" alt="statue of liberty">
+                    <img class="tabs_img" src="./image/Rectangle 111111.png" alt="statue of liberty">
                 </div>
                 <div class="tabs_main-box tab2">
                     <div class="tabs_text-box">
@@ -127,7 +132,7 @@
                         <p class="tabs_box_text title5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nesciunt!</p>
                         <a class="small-button color-button button" href="" download>Download</a>
                     </div>
-                    <img class="tabs_img" src="./imagine/Rectangle 111111.png" alt="statue of liberty">
+                    <img class="tabs_img" src="./image/Rectangle 111111.png" alt="statue of liberty">
                 </div>
                 <div class="tabs_main-box tab3">
                     <div class="tabs_text-box">
@@ -136,7 +141,7 @@
                         <p class="tabs_box_text title5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nesciunt!</p>
                         <a class="small-button color-button button" href="" download>Download</a>
                     </div>
-                        <img class="tabs_img" src="./imagine/Rectangle 111111.png" alt="statue of liberty">
+                        <img class="tabs_img" src="./image/Rectangle 111111.png" alt="statue of liberty">
                 </div>
             </div>
         </section>
@@ -149,32 +154,32 @@
                 <p class="block_text title5 about_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <ul class="about_list">
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse1.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse1.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse2.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse2.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse3.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse3.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse1.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse1.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse2.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse2.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
                     <li class="about_list_item">
-                        <img class="about_list_icon" src="./imagine/ellipse3.svg" alt="icon">
+                        <img class="about_list_icon" src="./image/ellipse3.svg" alt="icon">
                         <h3 class="title4 about_list_title">Thoughtful Design</h3>
                         <p class="title5 about_list_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                     </li>
@@ -255,7 +260,7 @@
                         <div class="triangle-down">
                         </div>
                         <div class="reviewes_manager">
-                            <img class="reviews_img" src="./imagine/Ellipse 7manager1.png" alt="davis">
+                            <img class="reviews_img" src="./image/Ellipse 7manager1.png" alt="davis">
                             <div class="reviews_manager_description">
                                 <p class="reviews_manager_name title4">Davis Rhiel Madsen</p>
                                 <p class="title5">Manager</p>
@@ -272,7 +277,7 @@
                         <div class="triangle-down">
                         </div>
                         <div class="reviewes_manager">
-                            <img class="reviews_img" src="./imagine/Ellipse 7manager2.png" alt="Jaydon">
+                            <img class="reviews_img" src="./image/Ellipse 7manager2.png" alt="Jaydon">
                             <div class="reviews_manager_description">
                                 <p class="reviews_manager_name title4">Jaydon Rosser</p>
                                 <p class="title5">Manager</p>
@@ -289,7 +294,7 @@
                         <div class="triangle-down">
                         </div>
                         <div class="reviewes_manager">
-                            <img class="reviews_img" src="./imagine/Ellipse 7manager3.png" alt="Cooper">
+                            <img class="reviews_img" src="./image/Ellipse 7manager3.png" alt="Cooper">
                             <div class="reviews_manager_description">
                                 <p class="reviews_manager_name title4">Cooper Dorwart</p>
                                 <p class="title5">Manager</p>
@@ -347,25 +352,25 @@
         <div class="footer_box container">
             <ul class="footer_list">
                 <li class="footer_list_item">
-                    <img src="imagine/fasebook.svg" alt="facebook">
+                    <img src="image/fasebook.svg" alt="facebook">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/twitter.svg" alt="twitter">
+                    <img src="image/twitter.svg" alt="twitter">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/linkedin.svg" alt="linkedin">
+                    <img src="image/linkedin.svg" alt="linkedin">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/pinterest.svg" alt="pinterest">
+                    <img src="image/pinterest.svg" alt="pinterest">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/instagram.svg" alt="instagram">
+                    <img src="image/instagram.svg" alt="instagram">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/github.svg" alt="github">
+                    <img src="image/github.svg" alt="github">
                 </li>
                 <li class="footer_list_item">
-                    <img src="imagine/rss.svg" alt="rss">
+                    <img src="image/rss.svg" alt="rss">
                 </li>
             </ul>
             <div>© 2015 Axure Themes</div>

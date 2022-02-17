@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -143,52 +141,46 @@ h6,
 }
 
 /*MENU*/
-.menu {
+.header {
     background-color: rgba(0, 0, 0);
 }
 
-.menu_nav {
+.menu{
     display: flex;
     justify-content: space-between;
 }
 
-.menu_logo {
+.header__logo {
     padding: auto 0px;
     width: 183px;
 }
 
-.menu_list {
-    list-style: none;
+.menu__list {
     display: flex;
-    width: 570px;
-    justify-content: space-evenly;
-    cursor: pointer;
+    /* justify-content: space-evenly; */
 }
 
-.menu_list_item {
-    text-align: center;
-    align-self: center;
-    padding: 30px;
+.menu__item {
+    display: flex;
 }
 
-.menu_list_item:hover {
-    background-color: #EC7979;
-}
-
-.menu_list_item:active {
-    background-color:#AB4949;
-}
-
-.menu_list_link {
+.menu__link {
     display: block;
     text-decoration: none;
-    padding: auto 0px;
     font-family: Open Sans;
     font-weight: 600;
     font-size:  14px;
     color: white;
+    cursor: pointer;
 }
 
+.menu__link:hover {
+    background-color: #EC7979;
+}
+
+.menu__link:active {
+    background-color:#AB4949;
+}
 
 /*MAIN BANNER*/
 .dark {
@@ -197,7 +189,8 @@ h6,
 }
 
 .main-banner {
-    background-image: url(../imagine/mainbanner.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/mainbanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /*добавить фон сверху*/
@@ -631,7 +624,8 @@ h6,
 
 /*STYLISH*/
 .stylish {
-    background-image: url(../imagine/stylishbg.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../image/stylishbg.jpg);
 }
 
 .stylish_box {
