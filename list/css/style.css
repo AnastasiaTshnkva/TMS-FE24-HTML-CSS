@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    margin: 100px 200px;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.unnumb-list {
+    width: 50%;
+}
