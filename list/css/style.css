@@ -10,6 +10,21 @@
     font-style: italic;
 }
 
-.unnumb-list {
-    width: 50%;
+.unnumb-list__item::before {
+    content: "\2022";
+    font-weight: bold;
+    font-size: 30px;
+    color: red;
+}
+
+.numb-list__item::before {
+    content: "";
+    font-size: 20px;
+    list-style: decimal;
+    color: red;
+}
+
+.list__description {
+    color: black;
+    padding-left: 10px
 }

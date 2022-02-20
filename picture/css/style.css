@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    margin: 90px;
+    background-color: white;
+    z-index: 2;
+}
+
+
+/*SKY*/
+.sky {
+    position: relative;
+    background-color: #8cbaf5;
+    height: 500px;
+}
+
+/*CLOUDS*/
+.clouds {
+    display: flex;
+    height: 200px;
+    justify-content: space-around;
+}
+
+[class*="circul"] {
+    position: relative;
+    background-color: #ffffff;
+    height: 70px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.cloud1 {
+    display: flex;
+    align-self: flex-end;
+    width: 250px;
+    flex-wrap: wrap;
+}
+
+.cloud2 {
+    display: flex;
+    align-self: flex-start;
+    width: 250px;
+    flex-wrap: wrap;
+}
+
+.circul1 {
+    left: 20px;
+}
+
+.circul2 {
+    top: 20px;
+}
+
+.circul3 {
+    bottom: 20px;
+}
+
+.circul4 {
+    right: 20px;
+    bottom: 15px;
+}
+
+/*RAINBOW*/
+
+.rainbow {
+    position: absolute;
+    left: -30%;
+    bottom: -50%;
+    z-index: 1;
+}
+
+.rainbow__line {
+    border-radius: 50%;
+    height: 500px;
+    width: 1000px;
+}
+
+.red {
+    border: solid 5px red;
+}
+
+.orange {
+    border: solid 5px orange;
+}
+
+.yellow {
+    border: solid 5px yellow;
+}
+
+.green {
+    border: solid 5px greenyellow;
+}
+
+.azure {
+    border: solid 5px rgb(92, 226, 226);
+}
+
+.blue {
+    border: solid 5px blue;
+}
+
+.purple {
+    border: solid 5px purple;
+}
+
+/*SUN*/
+.sun {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+
+/*EARTH*/
+.earth {
+    position: relative;
+    margin-top: -130px;
+    margin-bottom: -20px;
+    z-index: 3;
+}
+
+.ground {
+    margin: 0 auto;
+    position: relative;
+    background-color: #0ea741;
+    height: 150px;
+    width: 80%;
+    border-radius: 500px/150px 150px 25px 25px;
+}
+
+
+/*WATER*/
+.water {
+    position: relative;
+    background-color: #5656b3;
+    height: 100px;
+    z-index: 1;
+}
