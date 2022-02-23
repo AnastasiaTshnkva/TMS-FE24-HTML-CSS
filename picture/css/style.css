@@ -2,26 +2,29 @@
     box-sizing: border-box;
 }
 
-.container {
+.container{
+    margin: 100px;
     position: relative;
-    margin: 90px;
     background-color: white;
-    z-index: 2;
+    z-index: 10;
 }
-
 
 /*SKY*/
 .sky {
     position: relative;
     background-color: #8cbaf5;
     height: 500px;
+    z-index: 1;
 }
 
 /*CLOUDS*/
 .clouds {
+    position: absolute;
     display: flex;
     height: 200px;
+    width: 100%;
     justify-content: space-around;
+    z-index: 4;
 }
 
 [class*="circul"] {
@@ -63,19 +66,19 @@
     bottom: 15px;
 }
 
-/*RAINBOW*/
 
-.rainbow {
+/*RAINBOW*/
+.rainbow1 {
     position: absolute;
-    left: -30%;
+    left: -35%;
     bottom: -50%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .rainbow__line {
     border-radius: 50%;
-    height: 500px;
-    width: 1000px;
+    height: 600px;
+    width: 1100px;
 }
 
 .red {
@@ -106,6 +109,15 @@
     border: solid 5px purple;
 }
 
+/* .rainbow2 {
+    position: relative;
+    height: 500px;
+    width: 700px;
+    border-radius: 50%;
+    right: -50%;
+    background: linear-gradient (red, orange, yellow, greenyellow, rgb(92, 226, 226), blue, purple)
+} */
+
 /*SUN*/
 .sun {
     position: absolute;
@@ -120,10 +132,12 @@
 
 /*EARTH*/
 .earth {
+    display: flex;
     position: relative;
     margin-top: -130px;
     margin-bottom: -20px;
-    z-index: 3;
+    z-index: 2;
+    justify-content: center;
 }
 
 .ground {
@@ -133,7 +147,57 @@
     height: 150px;
     width: 80%;
     border-radius: 500px/150px 150px 25px 25px;
+    z-index: 2;
 }
+
+.bilding {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    bottom: 60%;
+}
+
+.roof {
+    position: relative;
+}
+
+.pipe {
+    position: relative;
+    margin-bottom: -80px;
+    left: 15px;
+    background-color: #944800;
+    height: 70px;
+    width: 20px;
+}
+
+.triangle {
+    position: relative;
+    width: 0;
+	height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 100px solid #944800;
+}
+
+.circle-window {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    height: 30px;
+    width: 30px;
+    background-color: #e2f7ff;
+    border-radius: 50%;
+}
+
+.box {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #f4f8ce;
+    border: #bbc08b solid 1px;
+}
+
 
 
 /*WATER*/
