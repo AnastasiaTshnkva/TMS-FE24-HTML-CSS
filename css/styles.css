@@ -269,6 +269,7 @@ h6,
 
 .free {
     color: #EC7979;
+    font-style: normal;
 }
 
 .banner__form {
@@ -280,7 +281,7 @@ h6,
     padding: 0px 50px;
     margin-bottom: 33px;
 }
-
+/* 
 .banner__form-name {
     min-height: 19px;
     font-family: Open Sans;
@@ -289,15 +290,25 @@ h6,
     color: #BDBDBD;
     width: 370px;
     display: block;
-}
+} */
 
 .banner__form-input {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     border-bottom: solid #BDBDBD 1px;
     width: 370px;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 19px;
+    color: #BDBDBD;
+    width: 370px;
+    padding-bottom: 19px;
+    /* display: block; */
 }
+
+/* .banner__form-input:active {
+    color: #000000;
+    border-bottom: #000000;
+} */
 
 .form__button {
     width: 100%;
@@ -630,65 +641,66 @@ h6,
     url(../image/stylishbg.jpg);
 }
 
-.stylish_box {
+.stylish__box {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.stylish_text {
+.stylish__text {
     margin-bottom: 73px;
 }
 
 /*CONTACT FORM*/
-.contact_box {
+.contact__box {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
 }
 
-.contact_text {
+.contact__text {
     margin-bottom: 89px;
 }
 
-.contact_form {
+.contact__form {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
-.contact_form_part {
-    width: 575px;
+[class*=contact__form-part] {
+    /* width: 575px; */
     margin: 0px 2px;
+    max-height: 195px;
+    overflow: hidden;
 }
 
-.contact_form_item {
-    min-height: 50px;
+.contact__form-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.contact__form-input {
+    border: none;
+    border-bottom: solid 1px #BDBDBD;
+    display: block;
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #BDBDBD;
     margin-bottom: 50px;
 }
 
-.contact_form_name {
-    display: block;
-    font-family: Open Sans; 
-    font-size: 14px;
-    color: #BDBDBD;
-    width: 570px;
+.contact__form-message {
+    width: 50%;
 }
 
-.contact_form_input {
-    width: 570px;
-    border: none;
-    border-bottom: solid 1px #BDBDBD;
-}
-
-.contact_form_message {
-    width: 570px;
-}
-
-.contact_form_message_input {
-    width: 570px;
-    height: 222px;
+.contact__textarea {
+    width: 100%;
     border: none;
     border-bottom: solid 1px #BDBDBD;
 }

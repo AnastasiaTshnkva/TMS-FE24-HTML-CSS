@@ -51,22 +51,22 @@
                     </div>
         
                     <div class="banner__form-box">
-                        <h2 class="form-box__header title4">Try Your <span class="free">FREE</span> Trial Today</h2>
+                        <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
                         <form class="banner__form" action="">
+                            <div class="form__container">
                             <div class="banner__form-item">
-                                <label class="banner__form-name" for="nick">Name</label>
-                                <input class="banner__form-input" type="text" name="nick">
+                                <input class="banner__form-input" type="text" name="nick" placeholder="Name">
                             </div>
                             <div class="banner__form-item">
-                                <label class="banner__form-name" for="e-mail">Email</label>
-                                <input class="banner__form-input" type="text" name="email">
+                                <input class="banner__form-input" type="text" name="email" placeholder="Email">
                             </div>
                             <div class="banner__form-item">
-                                <label class="banner__form-name" for="password">Password</label>
-                                <input class="banner__form-input" type="password" name="password">
+                                <input class="banner__form-input" type="password" name="password" placeholder="Password">
                             </div>
+                            <button class="button form__button">Get started</button>
+                        </div>
                         </form>
-                        <button class="button form__button">Get started</button>
+                        
                     </div>
                 </div>
             </div>
@@ -321,41 +321,34 @@
 
         <!--STYLISH AXURE DESIGN-->
         <section class="stylish dark">
-            <div class="stylish_box container">
+            <div class="stylish__box container">
                 <h2 class="block__header title2">STYLISH AXURE DESIGN</h2>
                 <hr class="line light-line">
-                <p class="block__text title5 stylish_text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                <p class="block__text title5 stylish__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
                 <a class="button big-button clear-button" href="" download>Download</a>
             </div>
         </section>
 
         <!--Contact form-->
         <section id="contact">
-            <div class="contact_box container">
+            <div class="contact__box container">
                 <h2 class="block__header title2">contact us</h2>
                 <hr class="line">
-                <p class="block__text contact_text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <form class="contact_form" action="">
-                    <div class="contact_form_part">
-                        <div class="contact_form_item">
-                            <label class="contact_form_name" for="nick1">Name</label>
-                            <input class="contact_form_input" type="text" name="nick1" size="40"><br>
+                <p class="block__text contact__text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <form class="contact__form" action="">
+                    <div class="contact__form">
+                        <div class="contact__form-part1">
+                            <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
+                            <input class="contact__form-input" type="text" name="email1" size="40" placeholder="Email">
+                            <input class="contact__form-input" type="text" name="password1" size="40" placeholder="Pasword">     
+                        </div>    
+                        <div class="contact__form-part contact__form-message">
+                            <textarea class="contact__textarea" rows="11" type="text" name="message" size="40" placeholder="Message"></textarea>
                         </div>
-                        <div class="contact_form_item">
-                            <label class="contact_form_name" for="email1">Email</label>
-                            <input class="contact_form_input" type="text" name="email1" size="40"><br>
-                        </div>
-                        <div class="contact_form_item">
-                            <label class="contact_form_name" for="password1">Password</label>
-                            <input class="contact_form_input" type="text" name="password1" size="40">
-                        </div>      
-                    </div>    
-                    <div class="contact_form_part contact_form_message">
-                        <label class="contact_form_name" for="message">Message</label>
-                        <input class="contact_form_message_input" type="text" name="message" size="40">
                     </div>
+                    <button class="button big-button color-button">Send message</button>
                 </form>
-                <button class="button big-button color-button">Send message</button>
+                
                 </div>
         </section>
     </main>
