@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-baner {
+    background-color: blueviolet;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.container {
+    padding: 0px 100px;
+}
+
+.color__box {
+    height: 100px;
+    background-color: blueviolet;
+    margin-bottom: 30px;
+}
