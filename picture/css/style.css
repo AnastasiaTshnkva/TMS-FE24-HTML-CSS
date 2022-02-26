@@ -7,6 +7,7 @@
     position: relative;
     background-color: white;
     z-index: 10;
+    overflow: hidden;
 }
 
 /*SKY*/
@@ -25,6 +26,7 @@
     width: 100%;
     justify-content: space-around;
     z-index: 4;
+    margin-top: 10px;
 }
 
 [class*="circul"] {
@@ -70,7 +72,7 @@
 /*RAINBOW*/
 .rainbow1 {
     position: absolute;
-    left: -35%;
+    left: -40%;
     bottom: -50%;
     z-index: 3;
 }
@@ -109,15 +111,6 @@
     border: solid 5px purple;
 }
 
-/* .rainbow2 {
-    position: relative;
-    height: 500px;
-    width: 700px;
-    border-radius: 50%;
-    right: -50%;
-    background: linear-gradient (red, orange, yellow, greenyellow, rgb(92, 226, 226), blue, purple)
-} */
-
 /*SUN*/
 .sun {
     position: absolute;
@@ -128,7 +121,6 @@
     background-color: yellow;
     border-radius: 50%;
 }
-
 
 /*EARTH*/
 .earth {
@@ -188,17 +180,117 @@
     width: 30px;
     background-color: #e2f7ff;
     border-radius: 50%;
+    border: solid grey 2px;
 }
 
 .box {
     position: relative;
+    align-items: flex-end;
+    display: flex;
     height: 150px;
     width: 150px;
-    background-color: #f4f8ce;
-    border: #bbc08b solid 1px;
+    background-color: #eef79e;
+}
+
+.door {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100px;
+    width: 50px;
+    background-color: grey;
+    margin-left: 10px;
+    border: rgb(94, 94, 94) solid 2px;
+}
+
+.doorhandle {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #f0e9e5;
+    margin-right: 5px;
+}
+
+.window {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    background-color: #bfe2f0;
+    margin-left: 15px;
+    border: solid grey 2px;
+}
+
+.rectangle {
+    width: 28px;
+    height: 57px;
+    border: solid gray 1px;
+}
+
+.square {
+    width: 28px;
+    height: 29px;
+    border: solid gray 1px;
 }
 
 
+/* FENCE */
+.fence {
+    position: absolute;
+    bottom: 50%;
+    left: 55%;
+    display: flex;
+    z-index: 10;
+}
+
+.board {
+    height: 100%;
+    margin: 0px 3px;
+}
+
+.board__up {
+    width: 0%;
+    height: 0%;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 20px solid blue;
+}
+
+.board__down {
+    height: 50px;
+    width: 14px;
+    background-color: blue;
+}
+
+/* TREE */
+.tree {
+    position: absolute;
+    bottom: 70%;
+    left: 60%;
+    z-index: 8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50px;
+}
+
+.branch {
+    width: 0%;
+    height: 0%;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid rgb(7, 189, 68);
+    margin-bottom: -15px;
+    z-index: 8;
+}
+
+.trunk {
+    width: 15px;
+    height: 50px;
+    z-index: 7;
+    background-color: #5e3d1d
+}
 
 /*WATER*/
 .water {
