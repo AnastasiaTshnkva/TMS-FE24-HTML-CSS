@@ -7,8 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsiv.css">
     </head>
 
 <body>
@@ -111,7 +112,7 @@
         <section class="tabs" id="tabs">
             <div class="container">
                 <ul class="tabs__list">
-                    <li class="tabs__item">Tab1</li>
+                    <li class="tabs__item tab1">Tab1</li>
                     <li class="tabs__item">Tab2</li>
                     <li class="tabs__item">Tab3</li>
                 </ul>
@@ -202,53 +203,55 @@
                 <hr class="line">
                 <p class="block__text title5 price__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="prise__cards">
-                    <div class="price__card">
-                        <div class="price__head">
-                            <h3 class="price__name title4">Basic</h3>
-                            <p class="price__cost title3">$10</p>
-                            <p class="price__description title5">Free for life</p>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="price__card">
+                                    <h3 class="price__name title4">Basic</h3>
+                                    <p class="price__cost title3">$10</p>
+                                    <p class="price__description title5">Free for life</p>
+                                    <ul class="title5 price__list">
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                    </ul>
+                            </div>
                         </div>
-                        <ul class="title5 price__list">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                        </ul>
+                        <div class="col-4">
+                            <div class="price__card price__card2">
+                                    <h3 class="price__name title4">Optima</h3>
+                                    <p class="price__cost title3">$20</p>
+                                    <p class="price__description title5">Free for life</p>
+                                    <ul class="title5 price__list">
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="price__card">
+                                    <h3 class="price__name title4">Pro</h3>
+                                    <p class="price__cost title3">$30</p>
+                                    <p class="price__description title5">Free for life</p>
+                                    <ul class="title5 price__list">
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                        <li class="price__item">1 gb of space</li>
+                                    </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="price__card price__card2">
-                        <div class="price__head">
-                            <h3 class="price__name title4">Optima</h3>
-                            <p class="price__cost title3">$20</p>
-                            <p class="price__description title5">Free for life</p>
-                        </div>
-                        <ul class="title5 price__list">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                        </ul>
-                    </div>
-                    <div class="price__card">
-                        <div class="price__head">
-                            <h3 class="price__name title4">Pro</h3>
-                            <p class="price__cost title3">$30</p>
-                            <p class="price__description title5">Free for life</p>
-                        </div>
-                        <ul class="title5 price__list">
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                            <li class="price__item">1 gb of space</li>
-                        </ul>
                 </div>
-                </div>
-            </div>    
+            </div>   
         </section>
 
         <!--Review-->
@@ -257,63 +260,71 @@
                 <h2 class="block__header title2">what our customers are saying</h2>
                 <hr class="line">
                 <p class="block__text reviews__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <div class="reviews__quote">
-                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.
-                            </blockquote>
-                            <div class="triangle-down">
-                            </div>
+                <div class="row">
+                    <ul class="reviews__list">
+                        <div class="col-4">
+                            <li class="reviews__item">
+                                <div class="reviews__quote">
+                                    <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                        consectetur adipisicing elit. Doloribus 
+                                        accusamus expedita repellat similique 
+                                        odio aspernatur ex, architecto eaque 
+                                        quo suscipit.
+                                    </blockquote>
+                                    <div class="triangle-down">
+                                    </div>
+                                </div>
+                                <div class="reviewes__manager">
+                                    <img class="reviews__manager-img" src="./image/Ellipse 7manager1.png" alt="davis">
+                                    <div class="reviews__manager-description">
+                                        <p class="reviews__manager-name title4">Davis Rhiel Madsen</p>
+                                        <p class="title5">Manager</p>
+                                    </div>
+                                </div>  
+                            </li>
                         </div>
-                        <div class="reviewes__manager">
-                            <img class="reviews__manager-img" src="./image/Ellipse 7manager1.png" alt="davis">
-                            <div class="reviews__manager-description">
-                                <p class="reviews__manager-name title4">Davis Rhiel Madsen</p>
-                                <p class="title5">Manager</p>
-                            </div>
-                        </div>  
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__quote">
-                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.
-                            </blockquote>
-                            <div class="triangle-down">
-                            </div>
-                        <div class="reviewes__manager">
-                            <img class="reviews__manager-img" src="./image/Ellipse 7manager2.png" alt="Jaydon">
-                            <div class="reviews__manager-description">
-                                <p class="reviews__manager-name title4">Jaydon Rosser</p>
-                                <p class="title5">Manager</p>
-                            </div>
+                        <div class="col-4">
+                            <li class="reviews__item">
+                                <div class="reviews__quote">
+                                    <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                        consectetur adipisicing elit. Doloribus 
+                                        accusamus expedita repellat similique 
+                                        odio aspernatur ex, architecto eaque 
+                                        quo suscipit.
+                                    </blockquote>
+                                    <div class="triangle-down">
+                                    </div>
+                                <div class="reviewes__manager">
+                                    <img class="reviews__manager-img" src="./image/Ellipse 7manager2.png" alt="Jaydon">
+                                    <div class="reviews__manager-description">
+                                        <p class="reviews__manager-name title4">Jaydon Rosser</p>
+                                        <p class="title5">Manager</p>
+                                    </div>
+                                </div>
+                            </li>
                         </div>
-                    </li>
-                    <li class="reviews__item">
-                        <div class="reviews__quote">
-                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
-                                consectetur adipisicing elit. Doloribus 
-                                accusamus expedita repellat similique 
-                                odio aspernatur ex, architecto eaque 
-                                quo suscipit.
-                            </blockquote>
-                            <div class="triangle-down">
-                            </div>
-                        <div class="reviewes__manager">
-                            <img class="reviews__manader-img" src="./image/Ellipse 7manager3.png" alt="Cooper">
-                            <div class="reviews__manage-description">
-                                <p class="reviews__manager-name title4">Cooper Dorwart</p>
-                                <p class="title5">Manager</p>
-                            </div>
+                        <div class="col-4">
+                            <li class="reviews__item">
+                                <div class="reviews__quote">
+                                        <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit. Doloribus 
+                                            accusamus expedita repellat similique 
+                                            odio aspernatur ex, architecto eaque 
+                                            quo suscipit.
+                                        </blockquote>
+                                        <div class="triangle-down">
+                                        </div>
+                                    <div class="reviewes__manager">
+                                        <img class="reviews__manager-img" src="./image/Ellipse 7manager3.png" alt="Cooper">
+                                        <div class="reviews__manager-description">
+                                            <p class="reviews__manager-name title4">Cooper Dorwart</p>
+                                            <p class="title5">Manager</p>
+                                        </div>
+                                    </div>
+                            </li>
                         </div>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -331,22 +342,28 @@
 
         <!--Contact form-->
         <section id="contact">
-            <div class="contact__box container">
+            <div class="container">
                 <h2 class="block__header title2">contact us</h2>
                 <hr class="line">
                 <p class="block__text contact__text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <form class="contact__form" action="">
-                    <div class="contact__form">
-                        <div class="contact__form-part1">
-                            <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
-                            <input class="contact__form-input" type="text" name="email1" size="40" placeholder="Email">
-                            <input class="contact__form-input" type="text" name="password1" size="40" placeholder="Pasword">     
-                        </div>    
-                        <div class="contact__form-part contact__form-message">
-                            <textarea class="contact__textarea" rows="11" type="text" name="message" size="40" placeholder="Message"></textarea>
+                    <div class="row">
+                        <div class="contact__form-box">
+                            <div class="col-6">
+                                <div class="contact__form-part1">
+                                    <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
+                                    <input class="contact__form-input" type="text" name="email1" size="40" placeholder="Email">
+                                    <input class="contact__form-input" type="text" name="password1" size="40" placeholder="Pasword">     
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="contact__form-message">
+                                    <textarea class="contact__textarea" rows="11" type="text" name="message" size="40" placeholder="Message"></textarea>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <button class="button big-button color-button">Send message</button>
+                        <button class="button big-button color-button contact__form-button">Send message</button>
                 </form>
                 
                 </div>
@@ -354,31 +371,31 @@
     </main>
 
     <footer class="footer dark">
-        <div class="footer_box container">
-            <ul class="footer_list">
-                <li class="footer_list_item">
+        <div class="footer__box container">
+            <ul class="footer__list">
+                <li>
                     <img src="image/fasebook.svg" alt="facebook">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/twitter.svg" alt="twitter">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/linkedin.svg" alt="linkedin">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/pinterest.svg" alt="pinterest">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/instagram.svg" alt="instagram">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/github.svg" alt="github">
                 </li>
-                <li class="footer_list_item">
+                <li>
                     <img src="image/rss.svg" alt="rss">
                 </li>
             </ul>
-            <div>© 2015 Axure Themes</div>
+            <div class="footer__discr">© 2015 Axure Themes</div>
         </div>
     </footer>
 </body>
