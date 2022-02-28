@@ -321,13 +321,12 @@ h6,
 /*MEDIA*/
 .media {
     background-color: #F8EFEF;
-    min-height: 140px;
 }
 
 .media__box {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .media__box1 {
@@ -353,13 +352,11 @@ h6,
 .media__list {
     display: flex;
     justify-content: space-between;
-    list-style: none;
-    flex-shrink: 0;
     align-items: center;
 }
 
 .media__item {
-    margin: 35px 20px;
+    padding: 34px 0 23px;
 }
 
 /*TABS*/
@@ -617,12 +614,6 @@ h6,
     display: flex;
     justify-content: space-between;
 }
-
-/* .contact__form-part1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-} */
 
 .contact__form-input,
 .contact__textarea {
