@@ -9,10 +9,14 @@ body {
     border-color: white;
 }
 
-.container {
+/* .container {
     margin: 0 auto;
-    max-width: 1200px;
     padding: 0px 15px;
+} */
+
+[class*=col] {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*titles*/
@@ -139,7 +143,6 @@ h6,
     padding-bottom: 57px;
     text-align: center;
     text-transform: uppercase;
-    /* margin-top: 50px; */
 }
 
 .block__text {
@@ -164,6 +167,7 @@ h6,
 .header__logo {
     padding: auto 0px;
     width: 183px;
+    margin-left: -30px;
 }
 
 .menu {
@@ -194,6 +198,10 @@ h6,
 
 .menu__link:active {
     background-color:#AB4949;
+}
+
+.menu__mobil {
+    display: none;
 }
 
 /*MAIN BANNER*/
@@ -238,9 +246,9 @@ h6,
 }
 
 .banner__text {
-    max-width: 270px;
     margin-bottom: 42px;
     line-height: 21px;
+    margin-left: -15px;
 }
 
 .banner__text:last-child {
@@ -251,8 +259,6 @@ h6,
 /* BANER_FORM */
 .banner__form-box {
     flex-shrink: 0;
-    width: 470px;
-    height: 450px;
     background-color: #FFFFFF;
     border-radius: 10px;
 }
@@ -265,7 +271,8 @@ h6,
     font-size: 24px;
     line-height: 33px;
     text-align: center;
-    margin: 57px auto;
+    padding-top: 57px;
+    padding-bottom: 57px;
 }
 
 .free {
@@ -275,7 +282,7 @@ h6,
 
 .banner__form {
     display: block;
-    width: 470px;
+    width: 100%;
 }
 
 .banner__form-item {
@@ -286,12 +293,11 @@ h6,
 .banner__form-input {
     border: none;
     border-bottom: solid #BDBDBD 1px;
-    width: 370px;
     font-family: Open Sans;
     font-size: 14px;
     line-height: 19px;
     color: #BDBDBD;
-    width: 370px;
+    width: 100%;
     padding-bottom: 19px;
 }
 
@@ -433,11 +439,10 @@ h6,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px -15px;
+    /* margin: 0px -15px; */
 }
 
 .about__item {
-    width: 33.3333%;
     padding: 0px 15px;
     display: flex;
     flex-direction: column;
@@ -607,12 +612,13 @@ h6,
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-width: 220px;
 }
 
 .contact__form-box {
     display: flex;
     justify-content: space-between;
+    justify-content: flex-end;
+    margin-bottom: 50px;
 }
 
 .contact__form-input,
@@ -622,14 +628,17 @@ h6,
     font-family: Open Sans;
     font-size: 14px;
     color: #BDBDBD;
-    margin-bottom: 50px;
     width: 100%;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
+}
+
+.contact__form-part1 input+input {
+    margin-top: 50px;
 }
 
 .contact__textarea {
     resize: none;
-
+    height: 215px;
 }
 
 .contact__form-input:focus {

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIT</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,30 +12,38 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsiv.css">
     </head>
-
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
-                <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#tabs">Features</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#about">About</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#price">Pricing</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#reviews">Reviews</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="header-nav">
+                        <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
+                        <ul class="menu" id="menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#tabs">Features</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#about">About</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#price">Pricing</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#reviews">Reviews</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="menu__mobil">
+                            <a href="#menu">
+                                <img src="./image/menu-mobil.svg" alt="menu">
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     
@@ -43,31 +52,36 @@
         <section class="main-banner dark">
             <div class="container">
                 <div class="banner__box">
-                    <div> 
-                        <img class="banner__logo" src="./image/AXITlogo.svg" alt="logo">
-                        <h1 class="banner__title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
-                        <hr class="line light-line banner__line">
-                        <p class="banner__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                        <a class="small-button clear-button button" href="" download>Download</a>
-                    </div>
-        
-                    <div class="banner__form-box">
-                        <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
-                        <form class="banner__form" action="">
-                            <div class="form__container">
-                            <div class="banner__form-item">
-                                <input class="banner__form-input" type="text" name="nick" placeholder="Name">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-6 col-12">
+                            <div> 
+                                <img class="banner__logo" src="./image/AXITlogo.svg" alt="logo">
+                                <h1 class="banner__title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                                <hr class="line light-line banner__line">
+                                <p class="banner__text title5 col-sm-7 col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="small-button clear-button button" href="" download>Download</a>
                             </div>
-                            <div class="banner__form-item">
-                                <input class="banner__form-input" type="text" name="email" placeholder="Email">
-                            </div>
-                            <div class="banner__form-item">
-                                <input class="banner__form-input" type="password" name="password" placeholder="Password">
-                            </div>
-                            <button class="button form__button">Get started</button>
                         </div>
-                        </form>
-                        
+                        <div class="col-xl-5 col-lg-6 col-12">
+                            <div class="banner__form-box">
+                                <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
+                                <form class="banner__form" action="">
+                                    <div class="form__container">
+                                    <div class="banner__form-item">
+                                        <input class="banner__form-input" type="text" name="nick" placeholder="Name">
+                                    </div>
+                                    <div class="banner__form-item">
+                                        <input class="banner__form-input" type="text" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="banner__form-item">
+                                        <input class="banner__form-input" type="password" name="password" placeholder="Password">
+                                    </div>
+                                    <button class="button form__button">Get started</button>
+                                </div>
+                                </form>
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,11 +92,11 @@
             <div class="container ">
                 <div class="media__box">
                     <div class="row">
-                        <div class="media__box1 col-xl-5 col-12">
+                        <div class="media__box1 col-lg-5 col-12">
                             <h2 class="media__header title4">Social Media</h2>
                             <p class="media__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                         </div>
-                        <div class="col-7">
+                        <div class="col-lg-7">
                             <ul class="media__list">
                                 <li class="media__item">
                                     <img src="./image/fasebook.svg" alt="facebook">
@@ -116,9 +130,9 @@
         <section class="tabs" id="tabs">
             <div class="container">
                 <ul class="tabs__list">
-                    <li class="tabs__item tab1">Tab1</li>
-                    <li class="tabs__item">Tab2</li>
-                    <li class="tabs__item">Tab3</li>
+                    <li class="tabs__item tab__item1">Tab1</li>
+                    <li class="tabs__item tab__item2">Tab2</li>
+                    <li class="tabs__item tab__item3">Tab3</li>
                 </ul>
                 <div class="tabs__box tab1">
                     <div class="tabs__text-box">
@@ -162,41 +176,34 @@
         <!--About-->
         <section id="about">
             <div class="container">
-                <h2 class="block__header title2">WHY THIS IS AWESOME</h2>
-                <hr class="line">
-                <p class="block__text title5 about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <ul class="about__list">
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse1.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse2.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse3.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse1.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse2.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                    <li class="about__item">
-                        <img class="about__icon" src="./image/ellipse3.svg" alt="icon">
-                        <h3 class="title4 about__title">Thoughtful Design</h3>
-                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
-                    </li>
-                </ul>
+                <div class="row">
+                    <h2 class="block__header title2">WHY THIS IS AWESOME</h2>
+                    <hr class="line">
+                    <p class="block__text title5 about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="about__list">
+                        <div class="col-lg-4">
+                            <li class="about__item">
+                                <img class="about__icon" src="./image/ellipse1.svg" alt="icon">
+                                <h3 class="title4 about__title">Thoughtful Design</h3>
+                                <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                            </li>
+                        </div>
+                        <div class="col-lg-4">
+                            <li class="about__item">
+                                <img class="about__icon" src="./image/ellipse2.svg" alt="icon">
+                                <h3 class="title4 about__title">Thoughtful Design</h3>
+                                <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                            </li>   
+                        </div>
+                        <div class="col-lg-4">
+                            <li class="about__item">
+                                <img class="about__icon" src="./image/ellipse3.svg" alt="icon">
+                                <h3 class="title4 about__title">Thoughtful Design</h3>
+                                <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                            </li>    
+                        </div>
+                    </ul>
+                </div>
             </div>
         </section>
 
