@@ -15,35 +15,31 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="header-nav">
-                        <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
-                        <ul class="menu" id="menu">
-                            <li class="menu__item">
-                                <a class="menu__link" href="#tabs">Features</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#about">About</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#price">Pricing</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#reviews">Reviews</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="menu__mobil">
-                            <a href="#menu">
-                                <img src="./image/menu-mobil.svg" alt="menu">
-                            </a>
-                        </div>
-                    </nav>
+            <nav class="header-nav">
+                <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
+                <ul class="menu" id="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#tabs">Features</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#price">Pricing</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="menu__mobil">
+                    <a href="#menu">
+                        <img src="./image/menu-mobil.svg" alt="menu">
+                    </a>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
     
@@ -92,9 +88,11 @@
             <div class="container ">
                 <div class="media__box">
                     <div class="row">
-                        <div class="media__box1 col-lg-5 col-12">
-                            <h2 class="media__header title4">Social Media</h2>
-                            <p class="media__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        <div class="col-lg-5">
+                            <div class="media__box1">
+                                <h2 class="media__header title4">Social Media</h2>
+                                <p class="media__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            </div>
                         </div>
                         <div class="col-lg-7">
                             <ul class="media__list">
@@ -181,6 +179,7 @@
                     <hr class="line">
                     <p class="block__text title5 about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <ul class="about__list">
+                        <div class="row">
                         <div class="col-lg-4">
                             <li class="about__item">
                                 <img class="about__icon" src="./image/ellipse1.svg" alt="icon">
@@ -202,6 +201,7 @@
                                 <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
                             </li>    
                         </div>
+                    </div>
                     </ul>
                 </div>
             </div>
@@ -271,8 +271,8 @@
                 <h2 class="block__header title2">what our customers are saying</h2>
                 <hr class="line">
                 <p class="block__text reviews__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="row">
-                    <ul class="reviews__list">
+                <div class="reviews__list">
+                    <ul class="row">
                         <div class="col-4">
                             <li class="reviews__item">
                                 <div class="reviews__quote">
@@ -358,8 +358,8 @@
                 <hr class="line">
                 <p class="block__text contact__text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 <form class="contact__form" action="">
-                    <div class="row">
-                        <div class="contact__form-box">
+                    <div class="contact__form-box">
+                        <div class="row">
                             <div class="col-6">
                                 <div class="contact__form-part1">
                                     <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
@@ -368,9 +368,7 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <div class="contact__form-message">
-                                    <textarea class="contact__textarea" rows="11" type="text" name="message" size="40" placeholder="Message"></textarea>
-                                </div>
+                                <textarea class="contact__textarea" rows="11" type="text" name="message" size="40" placeholder="Message"></textarea>
                             </div>
                         </div>
                     </div>
