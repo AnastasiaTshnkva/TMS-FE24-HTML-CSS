@@ -76,6 +76,7 @@ h6,
 .button {
     font-family: Open Sans;
     font-weight: 600;
+    font-size: 18px;
     line-height: 25px;
     color: white;
     text-align: center;
@@ -304,6 +305,15 @@ h6,
     padding-bottom: 19px;
 }
 
+.banner__form-input:focus {
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.password:focus {
+    outline: none;
+} 
+
 .form__button {
     width: 100%;
     min-height: 15px;
@@ -345,7 +355,9 @@ h6,
 
 .media__header {
     display: block;
-    padding-top: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 18px;
 }
 
 .media__header:last-child {
@@ -398,12 +410,22 @@ h6,
     border-bottom: #BDBDBD solid 1px;
 }
 
-.tabs__item:active {
+.tabs__item:active,
+.tabs__item:focus {
     border: #BDBDBD solid 1px;
     border-bottom: #ffffff solid 1px;
     border-radius: 5px 5px 0px 0px;
     margin: -1px;
 }
+
+/* [name="tab"] {
+    visibility: hidden;
+    opacity: 0;
+}
+
+[name="tab"]:checked {
+    display: flex;
+} */
 
 .tabs__box {
     display: flex;
@@ -459,7 +481,7 @@ h6,
 }
 
 .about__icon {
-    width: 43.59%;
+    width: 92px;
     margin-bottom: 39px;
 }
 
@@ -471,7 +493,6 @@ h6,
     display: block;
     padding-top: 38px;
     padding-bottom: 38px;
-    margin: 0px 5px 8px;
 }
 
 .about__title:last-child {
@@ -500,35 +521,44 @@ h6,
 
 .price__card {
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .price__name,
 .price__cost,
-.price__description {
+.price__description, 
+.price__item {
     display: block;
     background-color: #333333;
     margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.price__name {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 24px;
+    line-height: 33px;
 }
 
 .price__cost {
-    height: 98px;
     font-size: 36px;
+    line-height: 43px;
     font-weight: 700;
+    padding-top: 27px;
+    padding-bottom: 27px;
 }
 
 .price__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 48px;
     color: #86878B;
     background-color: #FFFFFF;
-    margin: 2px;
 }
 
 .price__card2 {
@@ -564,8 +594,9 @@ h6,
 	border-left: 20px solid transparent;
 	border-right: 20px solid transparent;
 	border-top: 30px solid #E2E2E2;
-    margin-left: 10%;
+    margin-left: 15%;
     margin-bottom: 46px;
+    margin-top: -1px;
 }
 
 .reviewes__manager {
@@ -623,8 +654,6 @@ h6,
 }
 
 .contact__form-box {
-    display: flex;
-    justify-content: stretch;
     margin-bottom: 50px;
     min-height: 215px;
 }
@@ -678,9 +707,12 @@ h6,
 
 .footer__list {
     display: flex;
-    list-style: none;
-    width: 570px;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding-left: 32%;
+    padding-right: 32%;
 }
 
 .footer__list-item {
@@ -690,5 +722,5 @@ h6,
 }
 
 .footer__discr {
-    margin: 27px 0px 0px;
+    margin: 32px 0px 0px;
 }

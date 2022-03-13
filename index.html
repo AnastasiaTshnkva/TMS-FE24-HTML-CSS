@@ -52,7 +52,7 @@
                                 <img class="banner__logo" src="./image/AXITlogo.svg" alt="logo">
                                 <h1 class="banner__title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                                 <hr class="line light-line banner__line">
-                                <p class="banner__text title5 col-sm-7 col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <p class="banner__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                 <a class="small-button clear-button button" href="" download>Download</a>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                         <input class="banner__form-input" type="text" name="email" placeholder="Email">
                                     </div>
                                     <div class="banner__form-item">
-                                        <input class="banner__form-input" type="password" name="password" placeholder="Password">
+                                        <input class="banner__form-input password" type="password" name="password" placeholder="Password">
                                     </div>
                                     <button class="button form__button">Get started</button>
                                 </div>
@@ -126,47 +126,70 @@
         <section class="tabs" id="tabs">
             <div class="container">
                 <ul class="tabs__list">
-                    <li class="tabs__item tab__item1">Tab1</li>
-                    <li class="tabs__item tab__item2">Tab2</li>
-                    <li class="tabs__item tab__item3">Tab3</li>
+                    <li class="tabs__item">
+                        <input type="radio" name="tab" id="tab1" checked>Tab1
+                    </li>
+                    <li class="tabs__item">
+                        <input type="radio" name="tab" id="tab2">Tab2
+                    </li>
+                    <li class="tabs__item">
+                        <input type="radio" name="tab" id=tab3">Tab3
+                    </li>
                 </ul>
-                <div class="tabs__box tab1">
-                    <div class="tabs__text-box">
-                        <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                            penatibus et magnis dis parturient montes.</p>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <a class="small-button color-button button" href="" download>Download</a>
-                    </div>
-                    <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                <div class="tab1">
+                    <label for="tab1">
+                        <div class="tabs__box">
+                            <div class="tabs__text-box">
+                                    <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes.</p>
+                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                    <a class="small-button color-button button" href="" download>Download</a>
+                            </div>
+                            <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                        </div>
+                    </label>
                 </div>
-                <div class="tabs__box tab2">
-                    <div class="tabs__text-box">
-                        <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                            penatibus et magnis dis parturient montes.</p>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <a class="small-button color-button button" href="" download>Download</a>
-                    </div>
-                    <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                <div class="tab2">
+                    <label for="tab2">
+                        <div class="tabs__box">
+                            <div class="row">
+                                <div class="col-xl-7">
+                                    <div class="tabs__text-box">
+                                            <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                            <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                                penatibus et magnis dis parturient montes.</p>
+                                            <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                            <a class="small-button color-button button" href="" download>Download</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5">
+                                    <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                                </div>
+                            </div>
+                        </div>
+                    </label>
                 </div>
-                <div class="tabs__box tab3">
-                    <div class="tabs__text-box">
-                        <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                            bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                            justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                            penatibus et magnis dis parturient montes.</p>
-                        <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                        <a class="small-button color-button button" href="" download>Download</a>
-                    </div>
-                    <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                <div class="tab3">
+                    <label for="tab2">
+                        <div class="tabs__box">
+                            <div class="tabs__text-box">
+                                    <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes.</p>
+                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                    <a class="small-button color-button button" href="" download>Download</a>
+                            </div>
+                            <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                        </div>
+                    </label>
                 </div>
-            </div>
         </section>
 
         <!--About-->
@@ -362,7 +385,7 @@
                                 <div class="contact__form-part1">
                                     <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
                                     <input class="contact__form-input" type="text" name="email1" size="40" placeholder="Email">
-                                    <input class="contact__form-input" type="text" name="password1" size="40" placeholder="Pasword">     
+                                    <input class="contact__form-input password" type="password" name="password1" size="40" placeholder="Password">     
                                 </div>
                             </div>
                             <div class="col-6">
@@ -378,31 +401,33 @@
     </main>
 
     <footer class="footer dark">
-        <div class="footer__box container">
-            <ul class="footer__list">
-                <li>
-                    <a class="icon-facebook footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-twitter  footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-linkedin  footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-pinterest  footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-instagram  footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-github  footer__list-item" href=""></a>
-                </li>
-                <li>
-                    <a class="icon-rss  footer__list-item" href=""></a>
-                </li>
-            </ul>
-            <div class="footer__discr">© 2015 Axure Themes</div>
+        <div class="container">
+            <div class="footer__box">
+                <ul class="footer__list">
+                    <li>
+                        <a class="icon-facebook footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-twitter  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-linkedin  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-pinterest  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-instagram  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-github  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-rss  footer__list-item" href=""></a>
+                    </li>
+                </ul>
+                <div class="footer__discr">© 2015 Axure Themes</div>
+            </div>
         </div>
     </footer>
 </body>
