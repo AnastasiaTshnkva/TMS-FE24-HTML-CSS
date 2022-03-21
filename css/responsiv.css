@@ -102,6 +102,11 @@
         font-size: 28px;
     }
 
+    /* TABS */
+    .tabs__item {
+        padding: 10px 65px;
+    }
+
     /* ABOUT */
     .about__text {
         margin-bottom: 66px;
@@ -198,17 +203,110 @@
 }
 
 @media (max-width: 991px) {
+    .line {
+        width: 135px;
+    }
+
+    /* BUTTONS */
+    .small-button {
+        width: 290px;
+    }
+    
+    .big-button {
+        width: 290px;
+    }
+    
+    /* MAIN BANNER  */
+    .banner__box {
+        padding-top: 140px;
+    }
+
+    .banner__box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner__logo {
+        display: none;
+    }
+
+    .banner__title {
+        text-align: center;
+    }
+
+    .banner__line {
+        margin: 0 auto;
+    }
+
+    .banner__text {
+        width: 100%;
+        margin-top: 42px;
+        margin-bottom: 42px;
+        text-align: center;
+    }
+
+    .banner__button {
+        margin-bottom: 50px;
+    }
+
+    .banner__form-box {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    /* MEDIA */
+    .media__list {
+        padding-top: 15px;
+    }
+
+    /* TABS */
+    .tabs {
+        margin-top: 40px;
+    }
+
+    .tabs__header {
+        padding-top: 5px;
+        padding-bottom: 7px;
+        margin-bottom: 0;
+    }
+
+    .tabs__item {
+        padding: 10px 35px;
+    }
+
+    .tabs__text-box {
+        margin: 10px;
+    }
+
+    /* ABOUT */
+    .about__item {
+        padding-left: 16.6666%;
+        padding-right: 16.6666%;
+    }
+
+    .about__text {
+        margin-bottom: 50px;
+    }
+
+    .about__icon {
+        margin-bottom: 0px;
+        width: 70px;
+    }
+
+    /* REVIEWES */
 
 }
 
 @media (max-width: 767px) {
 
+    
 }
 @media (max-width: 576px) {
 
 }
 
-@media (max-width: 319px) {
+/* @media (max-width: 319px) {
     .line {
         width: 134px;
     }
@@ -217,10 +315,10 @@
         justify-items: center;
     }
 
-    /* .container {
+    .container {
         padding-left: 15px;
         padding-right: 15px;
-    } */
+    }
 
     .menu__item {
         display: none;
@@ -257,4 +355,4 @@
     .banner__line {
         margin: 0px auto 42px auto;
     }
-}
+} */

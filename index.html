@@ -48,15 +48,15 @@
                 <div class="banner__box">
                     <div class="row">
                         <div class="col-xl-7 col-lg-6 col-12">
-                            <div> 
+                            <div class="banner__box1"> 
                                 <img class="banner__logo" src="./image/AXITlogo.svg" alt="logo">
                                 <h1 class="banner__title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
                                 <hr class="line light-line banner__line">
                                 <p class="banner__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <a class="small-button clear-button button" href="" download>Download</a>
+                                <a class="small-button clear-button button banner__button" href="" download>Download</a>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-6 col-12">
+                        <div class="col-xl-5 col-lg-6 col">
                             <div class="banner__form-box">
                                 <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
                                 <form class="banner__form" action="">
@@ -86,13 +86,13 @@
             <div class="container ">
                 <div class="media__box">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-6 col-12">
                             <div class="media__box1">
                                 <h2 class="media__header title4">Social Media</h2>
                                 <p class="media__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                             </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 col">
                             <ul class="media__list">
                                 <li class="media__item">
                                     <a class="icon-facebook media__item-link" href=""></a>
@@ -127,75 +127,86 @@
             <div class="container">
                 <ul class="tabs__list">
                     <li class="tabs__item">
-                        <input type="radio" name="tab" id="tab1" checked>Tab1
+                        <label for="tab1">Tab1</label>
                     </li>
                     <li class="tabs__item">
-                        <input type="radio" name="tab" id="tab2">Tab2
+                        <label for="tab2">Tab2</label>
                     </li>
                     <li class="tabs__item">
-                        <input type="radio" name="tab" id=tab3">Tab3
+                        <label for="tab3">Tab3</label>
                     </li>
                 </ul>
-                <div class="tab1">
-                    <label for="tab1">
-                        <div class="tabs__box">
+
+                <input id="tab1" type="radio" name="tabs" checked>
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
                             <div class="tabs__text-box">
-                                    <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes.</p>
-                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                                    <a class="small-button color-button button" href="" download>Download</a>
-                            </div>
-                            <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
-                        </div>
-                    </label>
-                </div>
-                <div class="tab2">
-                    <label for="tab2">
-                        <div class="tabs__box">
-                            <div class="row">
-                                <div class="col-xl-7">
-                                    <div class="tabs__text-box">
-                                            <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                                            <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                                bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                                justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                                penatibus et magnis dis parturient montes.</p>
-                                            <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                                            <a class="small-button color-button button" href="" download>Download</a>
-                                    </div>
-                                </div>
-                                <div class="col-xl-5">
-                                    <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
-                                </div>
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <a class="small-button color-button button" href="" download>Download</a>
                             </div>
                         </div>
-                    </label>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab3">
-                    <label for="tab2">
-                        <div class="tabs__box">
+
+                <input id="tab2" type="radio" name="tabs">
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
                             <div class="tabs__text-box">
-                                    <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
-                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-                                        bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
-                                        justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes.</p>
-                                    <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                                    <a class="small-button color-button button" href="" download>Download</a>
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <a class="small-button color-button button" href="" download>Download</a>
                             </div>
-                            <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
                         </div>
-                    </label>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input id="tab3" type="radio" name="tabs">
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="tabs__text-box">
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <a class="small-button color-button button" href="" download>Download</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </section>
 
         <!--About-->
         <section id="about">
             <div class="container">
-                <div class="row">
                     <h2 class="block__header title2">WHY THIS IS AWESOME</h2>
                     <hr class="line">
                     <p class="block__text title5 about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
