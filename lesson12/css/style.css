@@ -1,0 +1,107 @@
+.box1 {
+    margin: 5em auto;
+    display: block;
+    width: 300px;
+    height: 70px;
+    border: 5px black solid;
+}
+
+.loading1 {
+    width: 0%;
+    background-color: red;
+    height: 100%;
+    transition: width 1.5s ease-in-out;
+}
+
+.box1:hover > .loading1{
+    width: 100%;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    animation: rolling 2s ease-in-out alternate infinite;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+@keyframes rolling {
+    0% {
+        transform: translateX (-200px);
+        clip-path: circle(100%);
+    }
+
+    50% {
+        clip-path: circle(50%);
+    }
+
+    100% {
+        transform: translateX(200px) rotate(360deg);
+        clip-path: circle(50%);
+    }
+}
+
+.text {
+    font-style: 2em;
+    max-width: 50%;
+    position: relative;
+}
+
+.link__buy::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    transform: translate(200%);
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(65, 233, 23);
+}
+
+.link__buy:hover::after {
+    animation: rotatecolor 2s ease-in 1 forwards;
+}
+
+@keyframes rotatecolor {
+    0% {
+        background-color: rgb(65, 233, 23);
+        transform: translate(200%);
+    }
+
+    100% {
+        background-color: rgb(44, 169, 13);
+        transform: translate(200%) rotate(45deg);
+    }
+}
+
+.link__info::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    transform: translate(200% 100%);
+    display: block;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(230, 233, 23);
+}
+
+.link__info:hover::after {
+    animation: rotatecolor-2 2s ease-in 1 forwards;
+}
+
+@keyframes rotatecolor-2 {
+    0% {
+        background-color: rgb(230, 233, 23);
+        transform: translate(200% 100%);
+    }
+
+    100% {
+        background-color: rgb(193, 196, 19);
+        transform: translate(200% 100%) rotate(-45deg);
+    }
+}
