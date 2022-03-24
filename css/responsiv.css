@@ -293,66 +293,202 @@
         margin-bottom: 0px;
         width: 70px;
     }
-
-    /* REVIEWES */
-
 }
 
 @media (max-width: 767px) {
-
-    
-}
-@media (max-width: 576px) {
-
-}
-
-/* @media (max-width: 319px) {
-    .line {
-        width: 134px;
-    }
-    
-    .header-nav {
-        justify-items: center;
+    /* TEYLES */
+    .block__header {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
+    .block__text {
+        margin-top: 25px;
     }
 
-    .menu__item {
+    /* HEADER */
+    .menu {
         display: none;
-        width: 100%;
     }
 
     .menu__mobil {
         display: block;
-        padding-top: 19px;
-        padding-bottom: 19px;
-        width: 18px;
+        font-size: 24px;
+        margin-bottom: 19px;
+        margin-top: 19px;
+        margin-right: 20px;
     }
 
-    .header__logo {
-        margin-top: 16px;
-        margin-bottom: 16px;
-        width: 130px;
-    }
-
-    .banner__box {
-        padding-left: 0px;
-        padding-top: 140px;
-        justify-content: center;
-    }
-
-    .banner__logo {
-        display: none;
-    }
-
+    /* MAIN BANNER */
     .banner__title {
+        margin-bottom: 44px;
+    }
+
+    .banner__form-box {
+        margin: 0 15px;
+    }
+
+    /* MEDIA */
+    .media__box {
         text-align: center;
     }
 
-    .banner__line {
-        margin: 0px auto 42px auto;
+    .media__header {
+        margin-top: 30px;
+        margin-bottom: 13px;
     }
-} */
+
+    .media__text {
+        margin-bottom: 34px;
+    }
+
+    .media__list {
+        padding: 0;
+    }
+    
+    .media__item {
+        font-size: 24px;
+        padding: 0;
+        margin-bottom: 46px;
+    }
+
+    /* TABS */
+    .tabs__item {
+        width: 33.3333%;
+    }
+
+    .tabs__text-box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .tabs__header {
+        padding: 32px 30px;
+    }
+
+    .tabs__description {
+        margin-bottom: 29px;
+    }
+
+    .tabs__img {
+        display: none;
+    }
+
+    /* ABOUT */
+    .about__text {
+        margin-bottom: 84px;
+    }
+
+    .about__icon {
+        width: 80px;
+    }
+
+    .about__title {
+        padding-top: 29px;
+        padding-bottom: 29px;
+    }
+
+    .about__description {
+        margin-bottom: 44px;
+    }
+
+    .about__description:last-child {
+        margin-bottom: 60px;
+    }
+
+    /* PRICE */
+    .price__text {
+        margin-bottom: 24px;
+    }
+
+    .prise__cards {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 27px;
+    }
+
+    .price__card2 {
+        transform: translateY(0px);
+    }
+
+    /* REVIEWES */
+    .reviews__text {
+        margin-bottom: 24px;
+    }
+
+    .reviews__quote {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .reviews__quote-descr {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .triangle-down {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 25px solid #E2E2E2;
+        margin-bottom: 42px;
+    }
+
+    .reviews__manager-img {
+        width: 57px;
+        height: 57px;
+    }
+    
+    .reviews__manager-name {
+        padding-top: 9px;
+        padding-bottom: 9px;
+        margin-bottom: 10px;
+    }
+
+    /* STYLISH */
+    .stylish__box {
+        margin-bottom: 58px;
+    }
+
+    .stylish__text {
+        margin-bottom: 66px;
+    }
+
+    /* CONTACT */
+
+    .contact__textarea {
+        margin-top: 50px;
+    }
+
+    .contact__form-button {
+        margin-top: 50px;
+    }
+
+    /* FOOTER */
+    .footer__list {
+        padding: 0;
+        margin-bottom: 44px;
+        margin-top: 37px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    /* BANNER */
+    .banner__box {
+        padding-bottom: 50px;
+    }
+
+    .banner__form-item {
+        padding-left: 20px;
+        padding-right: 28px;
+    }
+
+    /* TABS */
+    .tabs__header {
+        padding-left: 20px;
+        padding-right: 20px;;
+    }
+}
