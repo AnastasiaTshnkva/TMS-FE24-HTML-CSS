@@ -1,15 +1,28 @@
+:root {
+    --main-color: rgb(184, 209, 242);
+    --main-text-color: rgb(0, 0, 0);
+    --button-color: rgb(0, 3, 175);
+    --button-text-color: rgb(255, 255, 255);
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.cont {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
-    background-color: rgb(89, 89, 89);
-    color: rgb(255, 255, 255);
+    background-color: var(--main-color);
 }
 
 .container {
@@ -30,9 +43,16 @@ body {
     font-size: 24px;
 }
 
+.header__account-list {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
 .header__account-link {
+
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .header__nav-link {
@@ -43,12 +63,11 @@ body {
 
 .header__nav-link {
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
 }
 
 /* REG */
 .reg {
-    color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -56,13 +75,14 @@ body {
 .reg__form-box {
     margin: 20px 30%;
     border-radius: 10px;
-    background-color: rgb(89, 89, 89);
+    background-color: var(--main-color);
 }
 
 .reg__form-title {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-size: 18px;
 }
 
 .reg__form {
@@ -74,31 +94,31 @@ body {
 
 .reg__form-input {
     border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid var(--main-text-color);
     margin-bottom: 20px;
-    background-color: rgb(89, 89, 89);
+    background-color: var(--main-color);
     width: 90%;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 .reg__form-input::placeholder {
-    color: white;
+    color: var(--main-text-color);
     font-family: Raleway, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .reg__form-input:hover,
 .reg__form-input:active {
-    background-color: rgb(89, 89, 89);
+    background-color: var(--main-color);
     outline: none;
 }
 
 .reg__form-but {
     width: 100%;
     border-radius: 10px;
-    background-color: rgb(4, 72, 197);
-    color: white;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
     border: none;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -107,13 +127,11 @@ body {
 }
 
 .footer {
-    background-color: rgb(89, 89, 89);
-    color: white;
+    background-color: var(--main-color);
 }
 
 .footer__box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center
 }
