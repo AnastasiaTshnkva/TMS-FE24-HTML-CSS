@@ -18,7 +18,14 @@
         <div class="container">
             <nav class="header-nav">
                 <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
-                <ul class="menu" id="menu">
+
+                <input type="radio" id="burger" name="mobil-menu" class="menu__mobil-input">
+                <button class="menu__mobil-burger"><label for="burger" class="icon-mobil-menu"></label></button>
+
+                <input type="radio" id="xmark" name="mobil-menu" class="menu__mobil-input">
+                <button class="menu__mobil-xmark"><label for="xmark" class="icon-xmark"></label></button>
+
+                <ul class="menu">
                     <li class="menu__item">
                         <a class="menu__link" href="#tabs">Features</a>
                     </li>
@@ -35,8 +42,6 @@
                         <a class="menu__link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button class="menu__mobil icon-mobil_menu">
-                </button>
             </nav>
         </div>
     </header>
@@ -126,15 +131,9 @@
         <section class="tabs" id="tabs">
             <div class="container">
                 <ul class="tabs__list">
-                    <li class="tabs__item">
-                        <label for="tab1">Tab1</label>
-                    </li>
-                    <li class="tabs__item">
-                        <label for="tab2">Tab2</label>
-                    </li>
-                    <li class="tabs__item">
-                        <label for="tab3">Tab3</label>
-                    </li>
+                    <li class="tabs__item"><label for="tab1">Tab1</label></li>
+                    <li class="tabs__item"><label for="tab2">Tab2</label></li>
+                    <li class="tabs__item"><label for="tab3">Tab3</label></li>
                 </ul>
 
                 <input id="tab1" type="radio" name="tabs" checked>
@@ -175,7 +174,7 @@
                         </div>
                         <div class="col-xl-5 col-md-6 col-12">
                             <div class="tabs__img-box">
-                                <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty">
+                                <!-- <img class="tabs__img" src="./image/Rectangle 111111.png" alt="statue of liberty"> -->
                             </div>
                         </div>
                     </div>
@@ -192,7 +191,7 @@
                                     justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
                                     penatibus et magnis dis parturient montes.</p>
                                 <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-                                <a class="small-button color-button button" href="" download>Download</a>
+                                <!-- <a class="small-button color-button button" href="" download>Download</a> -->
                             </div>
                         </div>
                         <div class="col-xl-5 col-md-6 col-12">

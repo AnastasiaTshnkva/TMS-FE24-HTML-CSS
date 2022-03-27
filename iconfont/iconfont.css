@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?6rc1on');
-  src:  url('fonts/icons.eot?6rc1on#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?6rc1on') format('truetype'),
-    url('fonts/icons.woff?6rc1on') format('woff'),
-    url('fonts/icons.svg?6rc1on#icons') format('svg');
+  src:  url('fonts/icons.eot?2ha5r8');
+  src:  url('fonts/icons.eot?2ha5r8#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?2ha5r8') format('truetype'),
+    url('fonts/icons.woff?2ha5r8') format('woff'),
+    url('fonts/icons.svg?2ha5r8#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,6 +26,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-xmark:before {
+  content: "\e908";
+}
 .icon-rss:before {
   content: "\e907";
 }
@@ -41,7 +44,7 @@
 .icon-linkedin:before {
   content: "\e903";
 }
-.icon-mobil_menu:before {
+.icon-mobil-menu:before {
   content: "\e904";
 }
 .icon-pinterest:before {
