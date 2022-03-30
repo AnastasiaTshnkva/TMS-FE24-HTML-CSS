@@ -321,7 +321,7 @@
     }
 
     .menu__mobil-input {
-        display: none;
+        visibility: hidden;
     }
 
     .menu {
@@ -514,7 +514,7 @@
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 
     /* BANNER */
     .banner__box {
