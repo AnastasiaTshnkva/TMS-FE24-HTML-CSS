@@ -1,3 +1,11 @@
+:root {
+    --dark-background: #000;
+    --dark-content-color: #fff;
+    --color-accent-and-hover:#EC7979;
+    --color-accent-active:#AB4949;
+    --border-color: #BDBDBD;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +14,7 @@ body {
     font-family: Raleway;
     font-size: 18px;
     font-weight: 400;
-    border-color: white;
+    background-color: var(--dark-content-color);
 }
 
 /*titles*/
@@ -15,6 +23,7 @@ h1,
     font-family: Raleway;
     font-weight: 500;
     font-size: 48px;
+    line-height: 56px;
 }
 
 h2,
@@ -58,8 +67,8 @@ h6,
 }
 
 .dark {
-    color: white;
-    background-color: black;
+    color: var(--dark-content-color);
+    background-color: var(--dark-background);
 }
 
 /*bittons*/
@@ -68,10 +77,11 @@ h6,
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: white;
+    color: var(--dark-content-color);
     text-align: center;
     padding: 20px 0px;
-    min-width: 18px;
+    min-height: 18px;
+    min-width: 100px;
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
@@ -88,43 +98,43 @@ h6,
 
 .color-button {
     border: none;
-    background-color: #EC7979;
+    background-color: var(--color-accent-and-hover);
 }
 
 .color-button:hover {
-    background-color: #AB4949;
+    background-color: var(--color-accent-active);
 }
 
 .color-button:active {
-    background-color: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949;
+    background-color: var(--color-accent-and-hover);
+    box-shadow: inset 0px 0px 10px var(--color-accent-active);
 }
 
 .clear-button {
-    border-color: white;
+    border-color: var(--dark-content-color);
     border-width: 2px;
 }
 
 .clear-button:hover {
-    border-color: #EC7979;
-    color: #EC7979;
+    border-color: var(--color-accent-and-hover);
+    color: var(--color-accent-and-hover);
 }
 
 .clear-button:active {
-    background-color: #AB4949;
-    color: white;
+    background-color: var(--color-accent-active);
+    color: var(--dark-content-color);
 }
 
 /*lines*/
 .line {
     width: 170px;
     border: none;
-    border-bottom: 1px solid #EC7979;
+    border-bottom: 1px solid var(--color-accent-and-hover);
     margin: 0px auto;
 }
 
 .light-line {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid var(--dark-content-color);
 }
 
 /*Headers*/
@@ -146,8 +156,8 @@ h6,
 .header {
     position: fixed;
     width: 100vw;
-    background-color: rgba(0, 0, 0);
-    z-index: 10;
+    background-color: var(--dark-background);
+    z-index: 1;
 }
 
 .header-nav {
@@ -157,7 +167,6 @@ h6,
 }
 
 .header__logo {
-    padding: auto 0px;
     width: 90px;
     margin-left: -30px;
 }
@@ -166,16 +175,12 @@ h6,
     display: none;
     font-size: 24px;
     border: none;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--dark-background);
+    color: var(--dark-content-color);
     margin: 19px;
 }
 
 .menu {
-    display: flex;
-}
-
-.menu__item {
     display: flex;
     align-items: center;
 }
@@ -187,18 +192,18 @@ h6,
     font-weight: 600;
     line-height: 19px;
     font-size:  14px;
-    color: white;
+    color: var(--dark-content-color);
     cursor: pointer;
     padding: 28px 30px;
-    transition: background-color 1s;
+    transition: background-color 1.5s;
 }
 
 .menu__link:hover {
-    background-color: #EC7979;
+    background-color: var(--color-accent-and-hover);
 }
 
 .menu__link:active {
-    background-color:#AB4949;
+    background-color:var(--color-accent-active);
 }
 
 /*MAIN BANNER*/
@@ -274,7 +279,7 @@ h6,
 /* BANER_FORM */
 .banner__form-box {
     flex-shrink: 0;
-    background-color: #FFFFFF;
+    background-color: var(--dark-content-color);
     border-radius: 10px;
 }
 
@@ -291,7 +296,7 @@ h6,
 }
 
 .free {
-    color: #EC7979;
+    color: var(--color-accent-and-hover);
     font-style: normal;
 }
 
@@ -307,11 +312,11 @@ h6,
 
 .banner__form-input {
     border: none;
-    border-bottom: solid #BDBDBD 1px;
+    border-bottom: solid var(--border-color) 1px;
     font-family: Open Sans;
     font-size: 14px;
     line-height: 19px;
-    color: #BDBDBD;
+    color: var(--border-color);
     width: 100%;
     padding-bottom: 19px;
 }
@@ -328,7 +333,7 @@ h6,
 .form__button {
     width: 100%;
     min-height: 15px;
-    background-color: #EC7979;
+    background-color: var(--color-accent-and-hover);
     border-radius: 0px 0px 10px 10px;
     font-family: Open Sans;
     font-size: 15px;
@@ -339,12 +344,12 @@ h6,
 }
 
 .form__button:hover {
-    background-color: #AB4949;
+    background-color: var(--color-accent-active);
 }
 
 .form__button:active {
-    background-color: #EC7979;
-    box-shadow: inset 0px 0px 10px #AB4949;
+    background-color: var(--color-accent-and-hover);
+    box-shadow: inset 0px 0px 10px var(--color-accent-active);
 }
 
 /*MEDIA*/
@@ -410,7 +415,7 @@ h6,
 
 .tabs__item {
     text-transform: uppercase;
-    background: #FFFFFF cover;
+    background: var(--dark-content-color) cover;
     padding: 12px 99px;
     text-align: center;
     font-family: Open Sans;
@@ -418,20 +423,20 @@ h6,
     line-height: 19px;
     cursor: pointer;
     margin-bottom: -1px;
-    border-bottom: #BDBDBD solid 1px;
+    border-bottom: var(--border-color) solid 1px;
 }
 
 .tabs__item:active,
 .tabs__item:focus {
-    border: #BDBDBD solid 1px;
-    border-bottom: #ffffff solid 1px;
+    border: var(--border-color) solid 1px;
+    border-bottom: var(--dark-content-color) solid 1px;
     border-radius: 5px 5px 0px 0px;
     margin: -1px;
 }
 
 .tab {
     display: flex;
-    border: #BDBDBD solid 1px;
+    border: var(--border-color) solid 1px;
     justify-content: space-between;
     display: none;
 }
@@ -476,13 +481,8 @@ h6,
 .about__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
-
-/* .about__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
 
 .about__item {
     padding: 0px 15px;
@@ -526,7 +526,7 @@ h6,
 }
 
 .price__card {
-    color: #FFFFFF;
+    color: var(--dark-content-color);
     margin-bottom: 50px;
 }
 
@@ -564,7 +564,7 @@ h6,
     justify-content: center;
     align-items: center;
     color: #86878B;
-    background-color: #FFFFFF;
+    background-color: var(--dark-content-color);
 }
 
 .price__card2 {
@@ -578,7 +578,14 @@ h6,
 }
 
 .reviews__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.reviews__item {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .reviews__quote-descr {
@@ -671,11 +678,11 @@ h6,
 .contact__form-input,
 .contact__textarea {
     border: none;
-    border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid var(--border-color);
     font-family: Open Sans;
     font-size: 14px;
     line-height: 19px;
-    color: #BDBDBD;
+    color: var(--border-color);
     width: 100%;
     padding-bottom: 17px;
 }
@@ -700,7 +707,7 @@ h6,
 
 /*FOOTER*/
 .footer {
-    background-color: #000000;
+    background-color: var(--dark-background);
     padding-top: 39px;
     padding-bottom: 27px;
 }

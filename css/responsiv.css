@@ -289,7 +289,7 @@
 }
 
 @media (max-width: 767px) {
-    /* TEYLES */
+    /* TITLES */
     .block__header {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -308,14 +308,6 @@
         display: block;
     }
 
-    /* [name="mobil-menu"]:checked + .menu {
-        display: flex;
-    }
-
-    [name="mobil-menu"]:checked + button {
-        display: none;
-    } */
-
     .menu__mobil-xmark {
         display: none;
     }
@@ -326,7 +318,6 @@
 
     .menu {
         display: none;
-        /* display: flex; */
         position: fixed;
         justify-content: center;
         flex-direction: column;
@@ -342,11 +333,6 @@
     .menu__link {
         min-width: 100vw;
     }
-
-    /* 
-    [name="menu__mobil"]:checked {
-        display: none;
-    } */
 
 
     /* MAIN BANNER */
@@ -409,7 +395,6 @@
     /* ABOUT */
     .about__list {
         display: block;
-        
     }
 
     .about__text {
@@ -453,9 +438,8 @@
         margin-bottom: 24px;
     }
 
-    .reviews__quote {
-        margin-left: 15px;
-        margin-right: 15px;
+    .reviews__list {
+        display: block;
     }
 
     .reviews__quote-descr {
