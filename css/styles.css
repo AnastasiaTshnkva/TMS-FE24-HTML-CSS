@@ -190,6 +190,7 @@ h6,
     color: white;
     cursor: pointer;
     padding: 28px 30px;
+    transition: background-color 1s;
 }
 
 .menu__link:hover {
@@ -217,6 +218,25 @@ h6,
 .banner__logo {
     width: 170px;
     margin-bottom: 73px;
+}
+
+.banner__logo:hover {
+    animation: jump 2s;
+}
+
+@keyframes jump { 
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: rotate(20deg);
+    }
+    60% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .banner__logo:last-child {
@@ -454,11 +474,15 @@ h6,
 }
 
 .about__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .about__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* margin: 0px -15px; */
-}
+} */
 
 .about__item {
     padding: 0px 15px;
@@ -499,11 +523,6 @@ h6,
 
 .price__text {
     margin-bottom: 59px;
-}
-
-.prise__cards {
-    margin: 0px -15px;
-    padding: 2px;
 }
 
 .price__card {
