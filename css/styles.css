@@ -329,7 +329,6 @@ h6,
     font-family: Open Sans;
     font-size: 15px;
     line-height: 20px;
-    padding: 22px auto;
     margin-top: 45px;
     border: none;
     margin-bottom: 0px;
@@ -401,7 +400,7 @@ h6,
 
 .tabs__item {
     text-transform: uppercase;
-    background: var(--dark-content-color) cover;
+    background: var(--dark-content-color);
     padding: 12px 99px;
     text-align: center;
     font-family: Open Sans;

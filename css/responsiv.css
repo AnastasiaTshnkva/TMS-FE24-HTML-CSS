@@ -334,7 +334,6 @@
         min-width: 100vw;
     }
 
-
     /* MAIN BANNER */
     .banner__title {
         margin-bottom: 44px;
@@ -499,7 +498,6 @@
 
 
 @media (max-width: 575px) {
-
     /* BANNER */
     .banner__box {
         padding-bottom: 50px;
