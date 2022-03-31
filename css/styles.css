@@ -200,10 +200,12 @@ h6,
 
 .menu__link:hover {
     background-color: var(--color-accent-and-hover);
+    text-transform: uppercase;
 }
 
 .menu__link:active {
     background-color:var(--color-accent-active);
+    text-transform: uppercase;
 }
 
 /*MAIN BANNER*/
