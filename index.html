@@ -60,7 +60,7 @@
                     <div class="col-xl-5 col-lg-6 col">
                         <div class="banner__form-box">
                             <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
-                            <form class="banner__form" action="URL">
+                            <form method="get" class="banner__form" action="URL">
                                 <div class="banner__form-item">
                                     <input required class="banner__form-input" type="text" name="nick" placeholder="Name">
                                 </div>
@@ -360,11 +360,11 @@
                 <h2 class="block__header title2">contact us</h2>
                 <hr class="line">
                 <p class="block__text contact__text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                <form class="contact__form" action="URL">
+                <form method="get" class="contact__form" action="URL">
                     <div class="contact__form-part1">
-                        <input class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
-                        <input class="contact__form-input" type="text" name="email1" size="40" placeholder="Email">
-                        <input class="contact__form-input password" type="password" name="password1" size="40" placeholder="Password">     
+                        <input required class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
+                        <input required class="contact__form-input" type="email" name="email1" size="40" placeholder="Email">
+                        <input required class="contact__form-input password" type="password" name="password1" size="40" placeholder="Password">     
                     </div>
                     <textarea class="contact__textarea" rows="11" name="message" cols="40" placeholder="Message"></textarea>
                     <button class="button big-button color-button contact__form-button">Send message</button>
