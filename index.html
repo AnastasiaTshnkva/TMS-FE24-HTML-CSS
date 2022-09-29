@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIT</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsiv.css">
+    </head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <a href=""><img class="header__logo" src="./image/AXITlogo.svg" alt="logo"></a>
+
+                <a class="menu__mobil-burger icon-mobil-menu"></a>
+                <a class="menu__mobil-xmark icon-xmark"></a>
+
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#tabs">Features</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#price">Pricing</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <!--Main banner-->
+        <section class="main-banner dark">
+            <div class="container">
+                <div class="banner__box row">
+                    <div class="col-xl-7 col-lg-6 col-12">
+                        <div class="banner__box1"> 
+                            <img class="banner__logo" src="./image/AXITlogo.svg" alt="logo">
+                            <h1 class="banner__title title1">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                            <hr class="line light-line banner__line">
+                            <p class="banner__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <a class="small-button clear-button button banner__button" href="" download>Download</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 col">
+                        <div class="banner__form-box">
+                            <h2 class="form-box__header title4">Try Your <em class="free">FREE</em> Trial Today</h2>
+                            <form method="get" class="banner__form" action="URL">
+                                <div class="banner__form-item">
+                                    <input required class="banner__form-input" type="text" name="nick" placeholder="Name">
+                                </div>
+                                <div class="banner__form-item">
+                                    <input required class="banner__form-input" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="banner__form-item">
+                                    <input required class="banner__form-input password" type="password" name="password" placeholder="Password">
+                                </div>
+                                <button class="button form__button">Get started</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Social Media-->
+        <section class="media">
+            <div class="container ">
+            <div class="media__box row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="media__box1">
+                            <h2 class="media__header title4">Social Media</h2>
+                            <p class="media__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col">
+                        <ul class="media__list">
+                            <li class="media__item">
+                                <a class="icon-facebook media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-twitter  media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-linkedin  media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-pinterest  media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-instagram  media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-github  media__item-link" href=""></a>
+                            </li>
+                            <li class="media__item">
+                                <a class="icon-rss  media__item-link" href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Tabs-->
+        <section class="tabs" id="tabs">
+            <div class="container">
+                <ul class="tabs__list">
+                    <li class="tabs__item"><label for="tab1">Tab1</label></li>
+                    <li class="tabs__item"><label for="tab2">Tab2</label></li>
+                    <li class="tabs__item"><label for="tab3">Tab3</label></li>
+                </ul>
+
+                <input id="tab1" type="radio" name="tabs" checked>
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="tabs__text-box">
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <a class="small-button color-button button" href="" download>Download</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <img class="tabs__img" src="./image/Rectangle111111.png" alt="statue of liberty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input id="tab2" type="radio" name="tabs">
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="tabs__text-box">
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <a class="small-button color-button button" href="" download>Download</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <!-- <img class="tabs__img" src="./image/Rectangle111111.png" alt="statue of liberty"> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <input id="tab3" type="radio" name="tabs">
+                <div class="tab">
+                    <div class="row">
+                        <div class="col-xl-7 col-md-6 col-12">
+                            <div class="tabs__text-box">
+                                <h3 class="tabs__header title3">Tabs with soft transitioning effect.</h3>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                                    bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra
+                                    justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque
+                                    penatibus et magnis dis parturient montes.</p>
+                                <p class="tabs__description title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                                <!-- <a class="small-button color-button button" href="" download>Download</a> -->
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-md-6 col-12">
+                            <div class="tabs__img-box">
+                                <img class="tabs__img" src="./image/Rectangle111111.png" alt="statue of liberty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--About-->
+        <section id="about">
+            <div class="container">
+                <h2 class="block__header title2">WHY THIS IS AWESOME</h2>
+                <hr class="line">
+                <p class="block__text title5 about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <img class="about__icon" src="./image/ellipse1.svg" alt="icon">
+                        <h3 class="title4 about__title">Thoughtful Design</h3>
+                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                    </li>
+                    <li class="about__item">
+                        <img class="about__icon" src="./image/ellipse2.svg" alt="icon">
+                        <h3 class="title4 about__title">Thoughtful Design</h3>
+                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                    </li>   
+                    <li class="about__item">
+                        <img class="about__icon" src="./image/ellipse3.svg" alt="icon">
+                        <h3 class="title4 about__title">Thoughtful Design</h3>
+                        <p class="title5 about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida  dolor sit amet lacus accumsan et viverra.</p>
+                    </li>    
+                </ul>
+            </div>
+        </section>
+
+        <!--Pricing options-->
+        <section class="price" id="price">
+            <div class="container">
+                <h2 class="block__header title2">pricing options</h2>
+                <hr class="line">
+                <p class="block__text title5 price__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="price__card">
+                            <h3 class="price__name title4">Basic</h3>
+                            <p class="price__cost title3">$10</p>
+                            <p class="price__description title5">Free for life</p>
+                            <ul class="title5 price__list">
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="price__card price__card2">
+                            <h3 class="price__name title4">Optima</h3>
+                            <p class="price__cost title3">$20</p>
+                            <p class="price__description title5">Free for life</p>
+                            <ul class="title5 price__list">
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                                <li class="price__item">1 gb of space</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="price__card">
+                                <h3 class="price__name title4">Pro</h3>
+                                <p class="price__cost title3">$30</p>
+                                <p class="price__description title5">Free for life</p>
+                                <ul class="title5 price__list">
+                                    <li class="price__item">1 gb of space</li>
+                                    <li class="price__item">1 gb of space</li>
+                                    <li class="price__item">1 gb of space</li>
+                                    <li class="price__item">1 gb of space</li>
+                                    <li class="price__item">1 gb of space</li>
+                                    <li class="price__item">1 gb of space</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+
+        <!--Review-->
+        <section id="reviews">
+            <div class="container">
+                <h2 class="block__header title2">what our customers are saying</h2>
+                <hr class="line">
+                <p class="block__text reviews__text title5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <div class="reviews__quote">
+                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </blockquote>
+                            <div class="triangle-down">
+                            </div>
+                        </div>
+                        <div class="reviewes__manager">
+                            <img class="reviews__manager-img" src="./image/Ellipse7manager1.png" alt="davis">
+                            <div class="reviews__manager-description">
+                                <p class="reviews__manager-name title4">Davis Rhiel Madsen</p>
+                                <p class="title5">Manager</p>
+                            </div>
+                        </div>  
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__quote">
+                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </blockquote>
+                            <div class="triangle-down">
+                            </div>
+                        </div>
+                        <div class="reviewes__manager">
+                            <img class="reviews__manager-img" src="./image/Ellipse7manager2.png" alt="Jaydon">
+                            <div class="reviews__manager-description">
+                                <p class="reviews__manager-name title4">Jaydon Rosser</p>
+                                <p class="title5">Manager</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item">
+                        <div class="reviews__quote">
+                            <blockquote class="reviews__quote-descr title5">Lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit. Doloribus 
+                                accusamus expedita repellat similique 
+                                odio aspernatur ex, architecto eaque 
+                                quo suscipit.
+                            </blockquote>
+                            <div class="triangle-down">
+                            </div>
+                        </div>    
+                        <div class="reviewes__manager">
+                            <img class="reviews__manager-img" src="./image/Ellipse7manager3.png" alt="Cooper">
+                            <div class="reviews__manager-description">
+                                <p class="reviews__manager-name title4">Cooper Dorwart</p>
+                                <p class="title5">Manager</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--STYLISH AXURE DESIGN-->
+        <section class="stylish dark">
+            <div class="stylish__box container">
+                <h2 class="block__header title2">STYLISH AXURE DESIGN</h2>
+                <hr class="line light-line">
+                <p class="block__text title5 stylish__text">Use the sections you need, remove the ones you don't.  Create gorgeous prototypes faster than ever!</p>
+                <a class="button big-button clear-button" href="" download>Download</a>
+            </div>
+        </section>
+
+        <!--Contact form-->
+        <section id="contact">
+            <div class="container">
+                <h2 class="block__header title2">contact us</h2>
+                <hr class="line">
+                <p class="block__text contact__text title5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <form method="get" class="contact__form" action="URL">
+                    <div class="contact__form-part1">
+                        <input required class="contact__form-input" type="text" name="nick1" size="40" placeholder="Name">
+                        <input required class="contact__form-input" type="email" name="email1" size="40" placeholder="Email">
+                        <input required class="contact__form-input password" type="password" name="password1" size="40" placeholder="Password">     
+                    </div>
+                    <textarea class="contact__textarea" rows="11" name="message" cols="40" placeholder="Message"></textarea>
+                    <button class="button big-button color-button contact__form-button">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer dark">
+        <div class="container">
+            <div class="footer__box">
+                <ul class="footer__list">
+                    <li>
+                        <a class="icon-facebook footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-twitter  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-linkedin  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-pinterest  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-instagram  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-github  footer__list-item" href=""></a>
+                    </li>
+                    <li>
+                        <a class="icon-rss  footer__list-item" href=""></a>
+                    </li>
+                </ul>
+                <div class="footer__discr">© 2015 Axure Themes</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
